@@ -1,0 +1,12 @@
+{
+  "listingMap": {
+    "index.qmd": [
+      "publications/gof_multigraph",
+      "publications/multiplexity",
+      "project/churn"
+    ],
+    "project\\index.qmd": [
+      "churn"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+project:
+  type: website
+  
+website:
+  site-url: "raymz1990.github.io"
+  title: "Raymundo Eduardo Pilz"
+  favicon: "static/favicon.png"
+  search: false
+  open-graph: 
+    site-name: raymundo's website
+    description: "Raymundo Pilz's website about work, graphics and statistics"
+    image: "static/img/avatar.png"
+  navbar:
+    pinned: true
+    logo: "static/logo.png"
+    title: false
+    background: primary
+    left:
+      - href: experience/index.qmd
+        text: Experience 
+      - href: education/index.qmd
+        text: Education 
+      - href: project/index.qmd
+        text: Projects
+    right:
+      - icon: github
+        href: https://github.com/raymz1990
+      - icon: linkedin
+        href: https://linkedin.com/raymundopilz
+  page-footer:
+    center: |
+      <b>© 2024 Raymundo Eduardo Pilz</b>  <br>
+      powered by [quarto](https://quarto.org)
+format:
+  html:
+    theme: 
+      - cosmo
+      - custom.scss
+    css: 
+      - styles.css
+      - academicons.css
+    toc: true
+    highlight-style: zenburn
+execute: 
+  freeze: auto
+
