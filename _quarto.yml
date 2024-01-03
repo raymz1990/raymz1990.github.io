@@ -2,7 +2,7 @@ project:
   type: website
   
 website:
-  site-url: "raymz1990.github.io"
+  site-url: "https://raymz1990.github.io"
   title: "Raymundo Eduardo Pilz"
   favicon: "static/favicon.png"
   search: false
