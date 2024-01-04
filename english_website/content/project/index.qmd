@@ -1,0 +1,13 @@
+---
+title: "Projects"
+listing:
+  id: projects
+  fields: [image,title, description]
+  contents: 
+    - churn
+  type: grid
+  grid-columns: 3
+  categories: true
+  image-align: left
+  sort: "date desc"
+---

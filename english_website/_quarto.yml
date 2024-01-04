@@ -28,8 +28,6 @@ website:
         href: https://github.com/raymz1990
       - icon: linkedin
         href: https://linkedin.com/raymundopilz
-      - text: static/img/flag-eua.svg
-        href: content/experience/index.qmd
   page-footer:
     center: |
       <b>© 2024 Raymundo Eduardo Pilz</b>  <br>
