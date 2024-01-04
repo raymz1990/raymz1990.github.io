@@ -8,5 +8,25 @@
     "items": [
       "/project/churn/index.html"
     ]
+  },
+  {
+    "listing": "/english_website/index.html",
+    "items": []
+  },
+  {
+    "listing": "/content/project/index.html",
+    "items": [
+      "/content/project/churn/index.html"
+    ]
+  },
+  {
+    "listing": "/english_website/content/project/index.html",
+    "items": [
+      "/english_website/content/project/churn/index.html"
+    ]
+  },
+  {
+    "listing": "/extensions.html",
+    "items": []
   }
 ]

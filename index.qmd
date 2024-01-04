@@ -87,46 +87,12 @@ SKILLS
 
 ::: {.column .col-v-center width="70%"}
 
-::: {.logoskills}
-![](static/img/skills/powerbi.png){style="width: 100%; height: 200px;"}
-**Power BI**
-
-:::
-
-::: {.logoskills}
-![](static/img/skills/r.png){style="width: 100%; height: 200px;"}
-
-**R**
-
-:::
-
-::: {.logoskills}
-![](static/img/skills/python.png){style="width: 100%; height: 200px;"}
-
-**Python**
-
-:::
-
-::: {.logoskills}
-![](static/img/skills/postgresql.png){style="width: 100%; height: 200px;"}
-
-**SQL**
-
-:::
-
-::: {.logoskills}
-![](static/img/skills/machinelearning.png){style="width: 100%; height: 200px;"}
-
-**Machine Learning**
-
-:::
-
-::: {.logoskills}
-![](static/img/skills/alteryx.png){style="height: 200px"}
-
-**Alteryx**
-
-:::
+<iconify-icon icon="logos:microsoft-power-bi" width="150" height="150"></iconify-icon>
+<iconify-icon icon="devicon:r" width="150" height="150"></iconify-icon>
+<iconify-icon icon="logos:python" width="150" height="150"></iconify-icon>
+<iconify-icon icon="devicon:postgresql" width="150" height="150"></iconify-icon>
+<iconify-icon icon="carbon:machine-learning-model" style="color: #2d6193;" width="150" height="150"></iconify-icon>
+<iconify-icon icon="simple-icons:alteryx" style="color: #2d6193;" width="150" height="150"></iconify-icon>
 
 :::
 

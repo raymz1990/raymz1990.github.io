@@ -24,11 +24,11 @@ website:
       - href: content/project/index.qmd
         text: Projects
     right:
-      - icon: github
+      - text: "{{< iconify fa6-brands github >}}"
         href: https://github.com/raymz1990
-      - icon: linkedin
+      - text: "{{< iconify entypo-social linkedin-with-circle >}}"
         href: https://linkedin.com/raymundopilz
-      - text: static/img/flag-eua.svg
+      - text: "{{< iconify emojione flag-for-united-states >}}"
         href: content/experience/index.qmd
   page-footer:
     center: |

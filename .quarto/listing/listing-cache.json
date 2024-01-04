@@ -7,6 +7,18 @@
     ],
     "project\\index.qmd": [
       "churn"
+    ],
+    "content\\project\\index.qmd": [
+      "churn"
+    ],
+    "english_website\\content\\project\\index.qmd": [
+      "churn"
+    ],
+    "english_website\\index.qmd": [
+      "project/churn"
+    ],
+    "extensions.qmd": [
+      "extensions/yaml/**.yml"
     ]
   }
 }

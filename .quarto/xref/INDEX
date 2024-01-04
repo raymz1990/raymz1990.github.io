@@ -13,5 +13,35 @@
   },
   "education/index.qmd": {
     "index.html": "f52d5ed3"
+  },
+  "content/education/index.qmd": {
+    "index.html": "eedfb3fb"
+  },
+  "content/experience/index.qmd": {
+    "index.html": "f219b50f"
+  },
+  "content/project/churn/index.md": {
+    "index.html": "d161d9f6"
+  },
+  "content/project/index.qmd": {
+    "index.html": "db93e78b"
+  },
+  "english_website/content/education/index.qmd": {
+    "index.html": "37464c04"
+  },
+  "english_website/content/experience/index.qmd": {
+    "index.html": "c918ece2"
+  },
+  "english_website/content/project/churn/index.md": {
+    "index.html": "f34f4c1a"
+  },
+  "english_website/content/project/index.qmd": {
+    "index.html": "cda7358d"
+  },
+  "english_website/index.qmd": {
+    "index.html": "6b24d206"
+  },
+  "extensions.qmd": {
+    "extensions.html": "d81c75cc"
   }
 }
