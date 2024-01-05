@@ -1,4 +1,4 @@
-h1 {
+  h1 {
     font-size: 4em;
     color: #63615a;
     font-weight: 400;
@@ -14,6 +14,10 @@ h1 {
   color: #63615a;
   }
   
+  .profile-pic {
+    border-radius: 50%;
+  }
+
   .home-intro{
     margin-top: -30px;
     text-align: justify;
@@ -83,10 +87,7 @@ h1 {
 
   .grey-section {
     background-color: #ebe9e1;
-    padding: 10px 0;
-    animation: intro .3s both;
-    animation-delay: .15s;
-}
+  }
   
   .news-section {
       background-color: #383732;
@@ -112,21 +113,16 @@ h1 {
 
   /* --- skills --- */
   .skills {
-      box-sizing: border-box;
-      display: flex;  /* Adiciona o modelo de layout flexível ao contêiner */
-      flex-direction: column;  /* Define a direção da flexbox para coluna */
-      align-items: flex-start;  /* Alinha os ícones na parte inferior do contêiner */
+      width: 100%;
+      margin: 0 auto;
+      padding: 10px;
       font-family: 'Montserrat';
+      text-align: center;
       font-size: 1.3em;
+      color: #63615a;
+      font-weight: 400;
   }
 
-  .skills iconify-icon {
-    margin: 20px;  /* Espaçamento entre os ícones */
-    width: 100px;
-    position: bottom;
-  }
-
-  
   
   /* --- github calendar --- */
   

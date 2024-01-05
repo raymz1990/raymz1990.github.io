@@ -4,6 +4,7 @@ project:
   
 website:
   site-url: "https://raymz1990.github.io"
+  google-analytics: "G-NYKKWQWQLX"
   title: "Raymundo Eduardo Pilz"
   favicon: "static/favicon.svg"
   search: false
@@ -29,16 +30,17 @@ website:
       - text: "{{< iconify entypo-social linkedin-with-circle >}}"
         href: https://linkedin.com/raymundopilz
       - text: "{{< iconify emojione flag-for-united-states >}}"
-        href: english_website/index.qmd
+        href: en/index.qmd
   page-footer:
     center: |
       <b>© 2024 Raymundo Eduardo Pilz</b>  <br>
       powered by [quarto](https://quarto.org)
+
 format:
   html:
     theme: 
-      - cosmo
-      - custom.scss
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme-dark.scss]
     css: 
       - styles.css
       - academicons.css
@@ -46,4 +48,3 @@ format:
     highlight-style: zenburn
 execute: 
   freeze: auto
-
