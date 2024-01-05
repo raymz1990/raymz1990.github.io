@@ -3,7 +3,8 @@
     "index.qmd": [
       "publications/gof_multigraph",
       "publications/multiplexity",
-      "project/churn"
+      "project/churn",
+      "content/project/churn"
     ],
     "project\\index.qmd": [
       "churn"

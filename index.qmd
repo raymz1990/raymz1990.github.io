@@ -9,7 +9,7 @@ listing:
   - id: projects
     fields: [title,date]
     contents: 
-    - project/churn
+    - content/project/churn
     type: table
     table-hover: true
     date-format: medium
@@ -41,7 +41,9 @@ listing:
 
 :::
 
-# Raymundo Eduardo Pilz
+# Raymundo Eduardo Pilz 
+<br>
+
 ::: {.home-intro}
 I am a *Statistics* student at the Federal University of Paraná (**[UFPR](https://ufpr.br/)**). I am deeply passionate about developing statistical concepts and transforming raw data into valuable insights.
 
@@ -81,19 +83,20 @@ SKILLS
 
 
 :::: {.columns}
-::: {.home-section}
+::: {.grey-section}
+
 ::: {.column .col-v-center width="15%"}
 :::
 
 ::: {.column .col-v-center width="70%"}
-
-<iconify-icon icon="logos:microsoft-power-bi" width="150" height="150"></iconify-icon>
-<iconify-icon icon="devicon:r" width="150" height="150"></iconify-icon>
-<iconify-icon icon="logos:python" width="150" height="150"></iconify-icon>
-<iconify-icon icon="devicon:postgresql" width="150" height="150"></iconify-icon>
-<iconify-icon icon="carbon:machine-learning-model" style="color: #2d6193;" width="150" height="150"></iconify-icon>
-<iconify-icon icon="simple-icons:alteryx" style="color: #2d6193;" width="150" height="150"></iconify-icon>
-
+::: {.skills}
+<iconify-icon icon="logos:microsoft-power-bi" height="100"></iconify-icon>
+<iconify-icon icon="devicon:r"  height="100"></iconify-icon>
+<iconify-icon icon="logos:python"  height="100"></iconify-icon>
+<iconify-icon icon="devicon:postgresql"  height="100"></iconify-icon>
+<iconify-icon icon="carbon:machine-learning-model" style="color: #2d6193;"  height="100"></iconify-icon>
+<iconify-icon icon="simple-icons:alteryx" style="color: #2d6193;"  height="150px"></iconify-icon>
+:::
 :::
 
 ::: {.column .col-v-center width="20%"}
