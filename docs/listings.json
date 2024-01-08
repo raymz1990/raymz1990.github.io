@@ -31,5 +31,15 @@
   {
     "listing": "/extensions.html",
     "items": []
+  },
+  {
+    "listing": "/en/content/project/index.html",
+    "items": [
+      "/en/content/project/churn/index.html"
+    ]
+  },
+  {
+    "listing": "/en/index.html",
+    "items": []
   }
 ]

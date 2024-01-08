@@ -43,5 +43,20 @@
   },
   "extensions.qmd": {
     "extensions.html": "d81c75cc"
+  },
+  "en/content/education/index.qmd": {
+    "index.html": "59c6aca1"
+  },
+  "en/content/experience/index.qmd": {
+    "index.html": "d08dc65c"
+  },
+  "en/content/project/churn/index.md": {
+    "index.html": "4074bc8f"
+  },
+  "en/content/project/index.qmd": {
+    "index.html": "f92b7d57"
+  },
+  "en/index.qmd": {
+    "index.html": "3519bb94"
   }
 }

@@ -1,4 +1,5 @@
 ---
+#title: "Raymundo Eduardo Pilz"
 pagetitle: "Raymundo Eduardo Pilz"
 page-layout: custom
 toc: false
@@ -20,6 +21,7 @@ listing:
     sort: "date desc"
 ---
 
+:::: light-mode
 
 :::: {.columns}
 
@@ -36,8 +38,12 @@ listing:
 {{< github raymz1990 >}}
 {{< linkedin raymundopilz >}}
 {{< email raymundopilz@gmail.com >}}
-{{< cv https://drive.google.com/file/d/1LXHgwnIf1F4sWGcTwDynQhMxWw_6s3Qd/view >}}
+{{< cv "content/home/resume/CV_Raymundo.Pilz.pdf">}}
 :::
+
+:::
+
+::: {.blank-space}
 
 :::
 
@@ -50,6 +56,7 @@ I am a *Statistics* student at the Federal University of Paraná (**[UFPR](https
 With a bachelor's degree in *Accounting* from the University of West Santa Catarina (**[UNOESC](https://www.unoesc.edu.br/)**), I possess the skill to translate numbers into compelling narratives. Specializing in providing in-depth reports detailing financial and operational impacts, I offer users profound insights that drive decision-making.
 
 ```{r, error = FALSE, include=FALSE}
+#exemplo quando quiser incluir about (precisa excluir o bloco de codigo)
 #:::
 #:::{.about-link}
 #[MORE ABOUT ME](about/)
@@ -65,14 +72,15 @@ With a bachelor's degree in *Accounting* from the University of West Santa Catar
 
 ::::
 
+
 ::::{.columns}
-::: {.news-section}
+::: {.light-section}
 ::: {.column .col-v-center width="15%"}
 :::
 
 ::: {.column .col-v-center width="70%"}
 
-::: {.news-header}
+::: {.light-header}
 SKILLS
 :::
 :::
@@ -82,67 +90,40 @@ SKILLS
 ::::
 
 :::: {.columns}
-::: {.grey-section}
+::: {.light-bg}
 
 ::: {.column .col-v-center width="15%"}
 :::
 
-:::: {.grid}
-
-::::{.g-col-2 .g-col-md-2}
 ::: {.skills}
-:::
-::::
+::: {layout-ncol=3}
 
-::::{.g-col-2 .g-col-md-1}
-::: {.skills}
-![Power BI](content/home/skills/img/microsoft-power-bi.svg){alt="Power BI" width="80%"}
-<br>
+![Power BI](content/home/skills/img/microsoft-power-bi.svg)
+<br> <br>
 Power BI
-:::
-::::
 
-::::{.g-col-2 .g-col-md-1}
-::: {.skills}
 ![R](content/home/skills/img/r.svg)
-<br>
+<br> <br>
 R
-:::
-::::
 
-::::{.g-col-2 .g-col-md-1}
-::: {.skills}
 ![Python](content/home/skills/img/python.svg)
-<br>
+<br> <br>
 Python
-:::
-::::
 
-::::{.g-col-2 .g-col-md-1}
-::: {.skills}
 ![SQL](content/home/skills/img/postgresql.svg)
-<br>
+<br> <br>
 SQL
-:::
-::::
 
-::::{.g-col-2 .g-col-md-1}
-::: {.skills}
 ![Machine Learning](content/home/skills/img/machine-learning-model.svg)
-<br>
+<br> <br>
 Machine Learning
-:::
-::::
 
-::::{.g-col-1 .g-col-md-1}
-::: {.skills}
 ![Alteryx](content/home/skills/img/alteryx.svg)
-<br>
+<br> <br>
 Alteryx
-:::
-::::
 
-::::
+:::
+:::
 
 ::: {.column .col-v-center width="20%"}
 :::
@@ -150,15 +131,14 @@ Alteryx
 :::
 ::::
 
-
 ::::{.columns}
-::: {.news-section}
+::: {.light-section}
 ::: {.column .col-v-center width="15%"}
 :::
 
 ::: {.column .col-v-center width="70%"}
 
-::: {.news-header}
+::: {.light-header}
 PROJECTS
 :::
 :::
@@ -185,6 +165,21 @@ PROJECTS
 
 ::::
 
+::::{.columns}
+::: {.light-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.light-header}
+GitHub Activity
+:::
+:::
+
+:::
+
+::::
 
 
 ::::{.columns}
@@ -196,7 +191,6 @@ PROJECTS
 
 
 
-### GitHub Activity
 <script
   src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
 </script>
@@ -214,4 +208,188 @@ GitHubCalendar(".calendar", "raymz1990", { responsive: true });
 </script>
 :::
 :::
+::::
+
+::::
+
+
+
+
+:::: dark-mode
+
+:::: {.columns}
+
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.portrait}
+![](static/img/avatar.jpg){.profile-pic}
+
+
+:::{.socials .text-center .col-v-center}
+{{< github raymz1990 >}}
+{{< linkedin raymundopilz >}}
+{{< email raymundopilz@gmail.com >}}
+{{< cv "content/home/resume/CV_Raymundo.Pilz.pdf">}}
+:::
+
+:::
+
+::: {.blank-space}
+
+:::
+
+# Raymundo Eduardo Pilz 
+<br>
+
+::: {.home-intro}
+I am a *Statistics* student at the Federal University of Paraná (**[UFPR](https://ufpr.br/)**). I am deeply passionate about developing statistical concepts and transforming raw data into valuable insights.
+
+With a bachelor's degree in *Accounting* from the University of West Santa Catarina (**[UNOESC](https://www.unoesc.edu.br/)**), I possess the skill to translate numbers into compelling narratives. Specializing in providing in-depth reports detailing financial and operational impacts, I offer users profound insights that drive decision-making.
+
+:::
+:::
+
+::: {.column .col-v-center width="20%"}
+:::
+
+::::
+
+
+::::{.columns}
+::: {.dark-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.dark-header}
+SKILLS
+:::
+:::
+
+:::
+
+::::
+
+:::: {.columns}
+::: {.dark-bg}
+
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.skills}
+::: {layout-ncol=3}
+
+![Power BI](content/home/skills/img/microsoft-power-bi.svg)
+<br> <br>
+Power BI
+
+![R](content/home/skills/img/r.svg)
+<br> <br>
+R
+
+![Python](content/home/skills/img/python.svg)
+<br> <br>
+Python
+
+![SQL](content/home/skills/img/postgresql.svg)
+<br> <br>
+SQL
+
+![Machine Learning](content/home/skills/img/machine-learning-model.svg)
+<br> <br>
+Machine Learning
+
+![Alteryx](content/home/skills/img/alteryx.svg)
+<br> <br>
+Alteryx
+
+:::
+:::
+
+::: {.column .col-v-center width="20%"}
+:::
+
+:::
+::::
+
+::::{.columns}
+::: {.dark-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.dark-header}
+PROJECTS
+:::
+:::
+
+:::
+
+::::
+
+
+::::{.columns}
+
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+:::{#projects}
+:::
+
+::: {.all-link}
+[more projects](project/)
+:::
+:::
+
+::::
+
+::::{.columns}
+::: {.dark-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.dark-header}
+GitHub Activity
+:::
+:::
+
+:::
+
+::::
+
+::::{.columns}
+::: {.home-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+
+<div class="l-body-outset">
+<a href="https://github.com/raymz1990">
+<div class="calendar">
+Loading my github calendar data.
+</div>
+</a>
+</div>
+
+<script>
+GitHubCalendar(".calendar", "raymz1990", { responsive: true });
+</script>
+:::
+:::
+::::
+
 ::::

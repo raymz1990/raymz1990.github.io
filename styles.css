@@ -5,8 +5,7 @@ div.sourceCode{
 
 
 body {
-    background-color: white;
-    font-size: 0.875em;
+  font-size: 0.875em;
 }
     
 h1,h2,h3,h4{
@@ -37,8 +36,6 @@ pre{
 code{
   color: var(--navbar-fg);
 }
-
-
 
 /* inline code */
 .post-body>p>code{
@@ -78,25 +75,16 @@ h1.f3{
   font-weight: 200;
 }
 
-/* The navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color:#383732;
-*/*  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-}
 
 
 /* navbar kink */
 @media screen and (min-width: 999px) {
   .navbar .navbar-nav .nav-link {
-    color:  #99978d;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
   }
   .navbar .navbar-nav .nav-link:hover {
-    color: white;
+    color: #99978d;
   }
   .navbar .navbar-nav .nav-item {
     position: relative;
@@ -107,28 +95,23 @@ h1.f3{
     left: 0;
     right: 0;
     margin: auto;
-    background-color: white;
     width: 0%;
     content: "";
     height: 1px;
     transition: all 0.5s;
   }
   
-.navbar .navbar-nav .nav-item:hover::after {
+  .navbar .navbar-nav .nav-item:hover::after {
     width: 100%;
+    }
   }
-}
 
 
-.navbar-brand>img {
+  .navbar-brand>img {
     max-height: 43px;
     width: auto;
     padding-right: 6px;
-}
-
-.nav-footer a{
-  color: #99978d;
-}
+  }
 
 .active {
   border-bottom: 1px solid #a198a6;
@@ -139,12 +122,6 @@ h1.f3{
     width: 170px;
     left: 15px;
     background-size: contain;
-}
-
-/*footer*/
-.nav-footer{
-  border-top: 0px !important;
-  background-color: #383732;
 }
 
 footer.footer .nav-footer, #quarto-header nav {
@@ -288,6 +265,7 @@ div.quarto-post {
     padding-bottom: 1em;
     padding-left: 3%;
     font-size: 1.6em;
+    position: center;
 }
 
 .socials a{
@@ -375,7 +353,7 @@ a {
     font-size: 0.875rem;
 }
 
-*/*.sidebar.toc-left>*, .sidebar.margin-sidebar>* {
+/*.sidebar.toc-left>*, .sidebar.margin-sidebar>* {
   padding-top: 5.5em;
 }
 

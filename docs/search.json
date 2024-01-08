@@ -194,5 +194,82 @@
     "title": "Raymundo Eduardo Pilz",
     "section": "",
     "text": "Type\n\n\nName\n\n\nDescription\n\n\nAuthor\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "en/content/experience/index.html#gs-risk",
+    "href": "en/content/experience/index.html#gs-risk",
+    "title": "Raymundo Eduardo Pilz",
+    "section": "GS Risk",
+    "text": "GS Risk\nAccounting Analyst  Nov 2022 – present ● Curitiba, Paraná - Brazil\n\nEconomic and financial diagnosis and identification of weighting factors, from the perspective of credit risk;\nCalculation, analysis, and monitoring of Operational, Profitability, Liquidity, Debt and Equity Structure indicators, with graphs and reports developed in Power BI;\nAnalysis and suggestion of improvements regarding the structure of financial statements in accordance with accounting legislation for the company’s operating segment;\nMonitoring the performance and evolution of production financing contracts and compliance with contractual assumptions and limits, with graphs and reports developed in Power BI."
+  },
+  {
+    "objectID": "en/content/experience/index.html#construtora-e-incorporadora-pride-sa",
+    "href": "en/content/experience/index.html#construtora-e-incorporadora-pride-sa",
+    "title": "Raymundo Eduardo Pilz",
+    "section": "Construtora e Incorporadora Pride S/A",
+    "text": "Construtora e Incorporadora Pride S/A\nController Analyst  Feb 2022 - Jul 2022 ● Curitiba, Paraná - Brazil\n\nEconomic and manageable data survey for calculation and presentation of results;\nDevelopment of operational and financial indicators;\nSupervision of sale variations regarding the planned and the fulfilled budgets;\nSupport for the financial area with clearings and defauts evaluation in the regard of the company’s ledger, with detailed Power BI reports;\nSupport for the accounting area on balance reports;\nVisualization and identification of management opportunities and improvements."
+  },
+  {
+    "objectID": "en/content/experience/index.html#ludovico-j-tozzo-ltda",
+    "href": "en/content/experience/index.html#ludovico-j-tozzo-ltda",
+    "title": "Raymundo Eduardo Pilz",
+    "section": "Ludovico J Tozzo LTDA",
+    "text": "Ludovico J Tozzo LTDA\nAccounting Analist  Apr 2019 - Dec 2021 ● Chapecó, Santa Catarina - Brazil\n\nAccounting entries | Accounting closing | Auditing;\nIncoming and outgoing tax books | Taxes retention | Tax calculation;\nExpense management | Expenses report | Cost control;\nRoutines of payable financial accounts | File management | Contract reviews;\nBalance sheets | Management of tax documents."
+  },
+  {
+    "objectID": "en/content/experience/index.html#laticínios-são-joão-sa-lac-lelo",
+    "href": "en/content/experience/index.html#laticínios-são-joão-sa-lac-lelo",
+    "title": "Raymundo Eduardo Pilz",
+    "section": "Laticínios São João S/A (Lac Lelo)",
+    "text": "Laticínios São João S/A (Lac Lelo)\nAdministrative Assistant  Dec 2012 – Apr 2019 ● São João do Oeste, Santa Catarina - Brazil\n\nBilling | Incoming and outgoing invoices | Expense entry;\nManagement reports | Performance and operational indicators;\nIncome statement | Products’ cost generation | Control of transport expenses;\nData verification | Process mapping;\nPlanning | Inventory control | Product management;\nSupplier and customer services | Sales"
+  },
+  {
+    "objectID": "en/content/project/churn/index.html",
+    "href": "en/content/project/churn/index.html",
+    "title": "Análise de Churn em uma Instituição Financeira",
+    "section": "",
+    "text": "pdf"
+  },
+  {
+    "objectID": "en/content/project/churn/index.html#problemática",
+    "href": "en/content/project/churn/index.html#problemática",
+    "title": "Análise de Churn em uma Instituição Financeira",
+    "section": "PROBLEMÁTICA:",
+    "text": "PROBLEMÁTICA:\nO problema a ser abordado neste trabalho é a taxa de churn em uma instituição financeira. A taxa de churn, que se refere à perda de clientes ao longo do tempo, é uma métrica crítica para empresas de serviços financeiros, pois afeta diretamente a receita e a satisfação do cliente. O objetivo deste estudo é analisar e compreender os fatores que podem estar contribuindo para o churn de clientes e identificar estratégias para reduzi-lo."
+  },
+  {
+    "objectID": "en/content/project/churn/index.html#descrição-do-problema",
+    "href": "en/content/project/churn/index.html#descrição-do-problema",
+    "title": "Análise de Churn em uma Instituição Financeira",
+    "section": "DESCRIÇÃO DO PROBLEMA:",
+    "text": "DESCRIÇÃO DO PROBLEMA:\nConhecer a taxa de churn de qualquer instituição é importante visto que para a empresa custa muito mais captar um novo cliente do que manter um que já possui. Compreender esses fatores é fundamental para tomar decisões informadas que permite a companhia desenvolver programas de leadade e implementar estratégias que aumentem a retenção de clientes."
+  },
+  {
+    "objectID": "en/content/project/churn/index.html#objetivos",
+    "href": "en/content/project/churn/index.html#objetivos",
+    "title": "Análise de Churn em uma Instituição Financeira",
+    "section": "OBJETIVOS:",
+    "text": "OBJETIVOS:\n\nAnálise exploratória e descritiva dos principais indicadores e características dos clientes, tais como:\n\nPontuação de crédito;\nLocalização;\nGênero;\nIdade;\nTempo de permanência;\nSaldo da conta;\nNúmero de produtos;\nUso de cartão de crédito\nAtividade de conta;\nSalário estimado;\nChurn;\nReclamações realizadas pelo cliente;\nÍndice de satisfação do cliente;\nTipo de cartão;\nPontos Acumulados.\nIdentificação e correção de possíveis inconsistências nos dados fornecidos;\n\nIdentificar quais dessas características têm maior correlação com o churn de clientes;\nModelos de predições dos dados para explorar padrões e tendências nos dados relacionados ao churn;\nComparações com modelos com todos os resultados gerados;\nPropor recomendações estratégicas com base nos insights obtidos para reduzir a taxa de churn.\n\ndataset disponivel em: https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn\nO presente trabalho foi desenvolvido na matéria do 2º período (2023) da disciplina de CE329 - Aprendizagem de Maquina, ministrada pelo professor Eduardo Vargas Ferreira pela Universidade Federal do Paraná (UFPR)"
+  },
+  {
+    "objectID": "en/content/project/index.html",
+    "href": "en/content/project/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Análise de Churn em uma Instituição Financeira\n\n\nTrabalhado de Aprendizado de Máquina aplicado em um estudo de caso.\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Vincent Clemson",
+    "section": "",
+    "text": "👋 I’m Vince. In 2017, I received my Bachelor of Science in mathematics & a minor in statistics from Penn State. Afterward, I spent 5+ years at what is now Peraton working a few Geospatial Intelligence data science missions on the NGA’s enterprise systems engineering contract. Recently, I was an AI Engineer at Booz Allen where I conducted statistical performance analyses against Earth observing satellite imagery object detection algorithms.\nCurrently, I’m busier than ever building my personal brand while also planning to travel by car across  to the West coast. I’m always searching for my next big (or tiny) data science adventure.\nI enjoy spatial analytics. I hope that I can help shed some light on spatial topics to those who are also interested with this site. It’s built with Quarto.\nWhen I’m not head down in geeky stuff, I enjoy salsa dancing, sports (go birds 🦅), and jumping out of aircraft (did it once - was fun & a bit terrifying).\nIf you’re interesting in learning more about my career, here’s a web version of my résumé.\nAlso, feel free to contact me at vincent.clemson{@}gmail.com.\nThanks for stopping by. ✌️"
+  },
+  {
+    "objectID": "index.html#raymundo-eduardo-pilz",
+    "href": "index.html#raymundo-eduardo-pilz",
+    "title": "Raymundo Eduardo Pilz",
+    "section": "Raymundo Eduardo Pilz",
+    "text": "Raymundo Eduardo Pilz\n\n\nI am a Statistics student at the Federal University of Paraná (UFPR). I am deeply passionate about developing statistical concepts and transforming raw data into valuable insights.\nWith a bachelor’s degree in Accounting from the University of West Santa Catarina (UNOESC), I possess the skill to translate numbers into compelling narratives. Specializing in providing in-depth reports detailing financial and operational impacts, I offer users profound insights that drive decision-making."
   }
 ]

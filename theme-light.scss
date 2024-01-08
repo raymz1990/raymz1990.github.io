@@ -1,13 +1,13 @@
 /*-- scss:defaults --*/
-$body-bg: #f8f6f0 !default;
-$body-color: #63615a;
-$link-color: #8f8187;
+$body-bg:                   #fdfbf7 !default;
+$body-color:                #4e734d !default;
+
+$navbar-bg:                 #4e734d !default;
+$navbar-fg:                 #fdfbf7 !default;
+
+
 $font-family-sans-serif: 'IBM Plex Sans';
 $font-family-monospace: 'IBM Plex Sans';
-
-$navbar-bg: #333333;
-$navbar-fg: #f8f6f0;
-$navbar-hl: #f8f6f0;
 
 /*-- scss:rules --*/
 @font-face {
@@ -33,3 +33,12 @@ $navbar-hl: #f8f6f0;
   }
 }
 
+/*footer*/
+.nav-footer{
+  border-top: 0px !important;
+  background-color:#4e734d;
+  color: #fdfbf7;
+}
+
+.light-mode { display: block; }
+.dark-mode { display: none; }
