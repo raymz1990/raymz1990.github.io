@@ -1,6 +1,7 @@
 /*-- scss:defaults --*/
 $body-bg:                   #fdfbf7 !default;
 $body-color:                #4e734d !default;
+$link-color:                #425f41 !default;
 
 $navbar-bg:                 #4e734d !default;
 $navbar-fg:                 #fdfbf7 !default;
@@ -38,6 +39,16 @@ $font-family-monospace: 'IBM Plex Sans';
   border-top: 0px !important;
   background-color:#4e734d;
   color: #fdfbf7;
+}
+
+/*link*/
+.listing-title{
+  color: #4e734d;
+}
+
+.listing-title:hover {
+  text-decoration:underline;
+  color:#425f41;
 }
 
 .light-mode { display: block; }

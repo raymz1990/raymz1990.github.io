@@ -2,42 +2,50 @@
 pagetitle: "Education"
 page-layout: custom
 toc: false
-css: index.css
+css: css/index.css
 ---
+
+:::: light-mode
+
 ::::{.columns}
-::: {.news-section}
+::: {.light-section}
 ::: {.column .col-v-center width="15%"}
 :::
 
 ::: {.column .col-v-center width="70%"}
 
-::: {.news-header}
-EDUCATION
+::: {.light-header}
+![](img/UFPR.png){style="width: 10%"} Federal University of Paraná (**[UFPR](https://ufpr.br/)**)
+
 :::
 :::
 :::
 ::::
 
+
+
+
 :::: {.columns}
 
-::: {.home-section}
+::: {.light-bg}
 ::: {.column .col-v-center width="15%"}
 :::
 
 ::: {.column .col-v-center width="70%"}
 
-::: {.portrait}
-![](https://i.imgur.com/UkwTgB7.jpeg){style="border-radius: 5%"}
+::: {.grid}
+::: {.g-col-2}
+![](img/UFPR.png)
 
 :::
 
-::: {.title}
-Federal University of Paraná (**[UFPR](https://ufpr.br/)**)
-:::
+::: {.g-col-10}
+::: {.home-intro}
 
-::: {.subtitle}
 Bachelor of Statistics and Data Science <br>
 Expected conclusion in 2026
+
+:::
 :::
 :::
 :::
@@ -46,35 +54,116 @@ Expected conclusion in 2026
 ::: {.column .col-v-center width="20%"}
 :::
 
+:::
 ::::
 
-:::: {.columns}
 
-::: {.home2-section}
+
+
+::::{.columns}
+::: {.light-section}
 ::: {.column .col-v-center width="15%"}
 :::
 
 ::: {.column .col-v-center width="70%"}
 
-::: {.portrait}
-![](images/unoesc.png){style="border-radius: 5%"}
+::: {.light-header}
+Federal University of Paraná (**[UFPR](https://ufpr.br/)**)
 
 :::
+:::
+:::
+::::
 
-::: {.title}
+
+
+
+:::: {.columns}
+
+::: {.light-bg}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.grid}
+::: {.g-col-2}
+
+::: {.light-logo}
+![](img/UFPR.png){style="border-radius: 5%"}
+
+:::
+:::
+
+::: {.g-col-10}
+
+<br>
+### **Bachelor of Statistics and Data Science** <br>
+### Expected conclusion in 2026
+
+
+:::
+:::
+:::
+
+
+::: {.column .col-v-center width="10%"}
+:::
+
+:::
+::::
+
+
+
+
+::::{.columns}
+::: {.light-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.light-header}
 University of West Santa Catarina (**[UNOESC](https://www.unoesc.edu.br/)**)
+
+:::
+:::
+:::
+::::
+
+
+
+
+:::: {.columns}
+
+::: {.light-bg}
+::: {.column .col-v-center width="15%"}
 :::
 
-::: {.subtitle}
-Bachelor of Accountancy <br>
-Completed in 2012
+::: {.column .col-v-center width="70%"}
+
+::: {.grid}
+::: {.g-col-2}
+::: {.light-logo}
+![](img/unoesc.png){style="border-radius: 5%"}
+:::
 :::
 
+::: {.g-col-10}
+
+<br>
+### Bachelor of Accountancy <br>
+### Completed in 2012
+
+:::
 :::
 :::
 
 
 ::: {.column .col-v-center width="20%"}
 :::
+
+:::
+::::
 
 ::::

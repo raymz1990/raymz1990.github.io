@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://raymz1990.github.io/index.html</loc>
-    <lastmod>2024-01-08T03:19:24.624Z</lastmod>
+    <lastmod>2024-01-08T19:00:30.451Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/project/churn/index.html</loc>
@@ -34,15 +34,15 @@
   </url>
   <url>
     <loc>https://raymz1990.github.io/content/education/index.html</loc>
-    <lastmod>2024-01-08T03:19:41.824Z</lastmod>
+    <lastmod>2024-01-08T19:38:22.782Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/content/experience/index.html</loc>
-    <lastmod>2024-01-08T03:19:34.793Z</lastmod>
+    <lastmod>2024-01-08T19:27:53.377Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/content/project/index.html</loc>
-    <lastmod>2024-01-08T02:49:04.134Z</lastmod>
+    <lastmod>2024-01-08T19:54:51.311Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/english_website/content/experience/index.html</loc>
@@ -70,10 +70,14 @@
   </url>
   <url>
     <loc>https://raymz1990.github.io/en/content/project/index.html</loc>
-    <lastmod>2024-01-07T18:16:53.127Z</lastmod>
+    <lastmod>2024-01-08T16:28:17.741Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/en/index.html</loc>
     <lastmod>2024-01-07T18:16:56.941Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raymz1990.github.io/en/content/project/en-churn/index.html</loc>
+    <lastmod>2024-01-08T16:28:16.285Z</lastmod>
   </url>
 </urlset>

@@ -4,7 +4,8 @@
       "publications/gof_multigraph",
       "publications/multiplexity",
       "project/churn",
-      "content/project/churn"
+      "content/project/churn",
+      "./content/project/churn"
     ],
     "project\\index.qmd": [
       "churn"
@@ -22,7 +23,8 @@
       "extensions/yaml/**.yml"
     ],
     "en\\content\\project\\index.qmd": [
-      "churn"
+      "churn",
+      "en-churn"
     ],
     "en\\index.qmd": [
       "project/churn"
