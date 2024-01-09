@@ -15,7 +15,11 @@ css: css/index.css
 ::: {.column .col-v-center width="70%"}
 
 ::: {.light-header}
+<<<<<<< HEAD
 EDUCATION
+=======
+![](img/UFPR.png){style="width: 10%"} Federal University of Paraná (**[UFPR](https://ufpr.br/)**)
+>>>>>>> 5bea3f2c02210c6f7705bd10938698d294cbc195
 
 :::
 :::
@@ -33,6 +37,12 @@ EDUCATION
 
 ::: {.column .col-v-center width="70%"}
 
+<<<<<<< HEAD
+=======
+::: {.grid}
+::: {.g-col-2}
+![](img/UFPR.png)
+>>>>>>> 5bea3f2c02210c6f7705bd10938698d294cbc195
 
 ::: {.d-inline-flex style="align-items:baseline"}
 ::: p-2
@@ -41,6 +51,7 @@ EDUCATION
 :::
 :::
 
+<<<<<<< HEAD
 ::: h3
 Federal University of Paraná (**[UFPR](https://ufpr.br/)**)
 :::
@@ -48,7 +59,15 @@ Federal University of Paraná (**[UFPR](https://ufpr.br/)**)
 
 ::: {.margin-right}
 **Bachelor of Statistics and Data Science** <br>
+=======
+::: {.g-col-10}
+::: {.home-intro}
+
+Bachelor of Statistics and Data Science <br>
+>>>>>>> 5bea3f2c02210c6f7705bd10938698d294cbc195
 Expected conclusion in 2026
+
+:::
 :::
 
 ---
@@ -60,16 +79,123 @@ Expected conclusion in 2026
 :::
 :::
 
+<<<<<<< HEAD
 ::: h3
-University of West Santa Catarina (**[UNOESC](https://www.unoesc.edu.br/)**)
+=======
+
+::: {.column .col-v-center width="20%"}
+:::
+
+:::
+::::
+
+
+
+
+::::{.columns}
+::: {.light-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.light-header}
+Federal University of Paraná (**[UFPR](https://ufpr.br/)**)
+
+:::
+:::
+:::
+::::
+
+
+
+
+:::: {.columns}
+
+::: {.light-bg}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.grid}
+::: {.g-col-2}
+
+::: {.light-logo}
+![](img/UFPR.png){style="border-radius: 5%"}
+
 :::
 :::
 
+::: {.g-col-10}
+
+<br>
+### **Bachelor of Statistics and Data Science** <br>
+### Expected conclusion in 2026
+
+
+:::
+:::
+:::
+
+
+::: {.column .col-v-center width="10%"}
+:::
+
+:::
+::::
+
+
+
+
+::::{.columns}
+::: {.light-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.light-header}
+>>>>>>> 5bea3f2c02210c6f7705bd10938698d294cbc195
+University of West Santa Catarina (**[UNOESC](https://www.unoesc.edu.br/)**)
+
+:::
+:::
+:::
+::::
+
+
+
+
+:::: {.columns}
+
+::: {.light-bg}
+::: {.column .col-v-center width="15%"}
+:::
+:::
+
+<<<<<<< HEAD
 ::: {.margin-right}
 **Bachelor of Accountancy** <br>
 Completed in 2012
+=======
+::: {.column .col-v-center width="70%"}
+
+::: {.grid}
+::: {.g-col-2}
+::: {.light-logo}
+![](img/unoesc.png){style="border-radius: 5%"}
+:::
+>>>>>>> 5bea3f2c02210c6f7705bd10938698d294cbc195
 :::
 
+::: {.g-col-10}
+
+<br>
+### Bachelor of Accountancy <br>
+### Completed in 2012
+
+:::
 :::
 
 ::: {.column .col-v-center width="20%"}
@@ -78,6 +204,7 @@ Completed in 2012
 :::
 ::::
 
+<<<<<<< HEAD
 ::::{.columns}
 ::: {.light-section}
 ::: {.column .col-v-center width="15%"}
@@ -254,4 +381,6 @@ EXTRACURRICULAR ACTIVITIES
 :::
 ::::
 
+=======
+>>>>>>> 5bea3f2c02210c6f7705bd10938698d294cbc195
 ::::

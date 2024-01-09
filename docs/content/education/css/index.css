@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1 {
   font-size: 2.5em;
   font-weight: 400;
@@ -75,13 +76,131 @@ div.quarto-post .thumbnail img {
   position: relative;
   margin-left: 2px;
 }
+=======
+  .title {
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #63615a;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: 2em;
+    color: #63615a;
+    font-weight: 300;
+  }
+ 
+  .subtitle2 {
+    font-size: 1.8em;
+    color: #63615a;
+    font-weight: 300;
+  }
+
+  body {
+  font-family: 'IBM Plex Sans';
+  color: #63615a;
+  }
+  
+  .home-intro{
+    margin-top: -30px;
+    text-align: justify;
+    font-family: 'IBM Plex Sans';
+    font-size: 1.3em;
+  }
+  
+  .news-header{
+    font-size: 3em;
+    font-family: 'Teko';
+    margin-bottom: -30px;
+    color: #99978d;
+  }
+  
+  
+  div.quarto-post .thumbnail {
+    flex-basis: 20%;
+  }
+  
+  div.quarto-post .thumbnail img {
+      margin-top: .4em;
+      width: 100%;
+      object-fit: scale-down;
+  }
+  
+  
+  .all-link{
+    font-size: 1em;
+    text-align: right;
+  }
+  
+  .all-link a{
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .all-link a::after{
+    display: inline-block;
+    content: "→";
+    position: relative;
+    margin-left: 2px;
+  }
+  
+  .about-link{
+    font-size: 1em;
+    float: right;
+  }
+  
+  .about-link a{
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .about-link a::after{
+    display: inline-block;
+    content: "→";
+    position: relative;
+    margin-left: 2px;
+  }
+  
+  .home-section {
+      background-color: #ebe9e1;
+      padding: 10px 0;
+      animation: intro .3s both;
+      animation-delay: .15s;
+  }
+   
+  .home2-section {
+    background-color: #fff;
+    padding: 10px 0;
+    animation: intro .3s both;
+    animation-delay: .15s;
+  }
+
+  .news-section {
+      background-color: #383732;
+      padding: 10px 0px;
+  }
+>>>>>>> 5bea3f2c02210c6f7705bd10938698d294cbc195
   
   
   .table {
       --bs-table-hover-bg:   #ebe9e1;
   }
   
+<<<<<<< HEAD
   
+=======
+  .light-logo {
+      width: 100%;
+      margin-bottom: 70px;
+      margin-right: 50px;
+      border-radius: 10%;
+      background-color: #4e734d;
+      top: 20px;
+      object-fit: none;
+      position: relative;
+      float: left;
+  }
+>>>>>>> 5bea3f2c02210c6f7705bd10938698d294cbc195
   
   .highlight-color{
    color: #AD0059;
@@ -114,11 +233,14 @@ div.quarto-post .thumbnail img {
     background-color: rgba(78, 115, 77, 0.25);
   }
 
+<<<<<<< HEAD
   .light-logo {
     border-radius: 10%;
     background-color: #4e734d;
   }
 
+=======
+>>>>>>> 5bea3f2c02210c6f7705bd10938698d294cbc195
 /*dark mode*/  
   .dark-section {
     background-color: #383732;
@@ -134,6 +256,7 @@ div.quarto-post .thumbnail img {
   .dark-bg {
     background-color: rgba(56, 55, 50, 0.45);
   }
+<<<<<<< HEAD
 
   .dark-logo {
     border-radius: 10%;
@@ -170,3 +293,5 @@ div.quarto-post .thumbnail img {
   }
 
 
+=======
+>>>>>>> 5bea3f2c02210c6f7705bd10938698d294cbc195
