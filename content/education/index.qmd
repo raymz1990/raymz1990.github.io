@@ -15,15 +15,11 @@ css: css/index.css
 ::: {.column .col-v-center width="70%"}
 
 ::: {.light-header}
-![](img/UFPR.png){style="width: 10%"} Federal University of Paraná (**[UFPR](https://ufpr.br/)**)
-
+EDUCATION
 :::
 :::
 :::
 ::::
-
-
-
 
 :::: {.columns}
 
@@ -33,23 +29,88 @@ css: css/index.css
 
 ::: {.column .col-v-center width="70%"}
 
-::: {.grid}
-::: {.g-col-2}
+::: {.d-inline-flex style="align-items:baseline"}
+::: p-2
+::: {.light-logo}
 ![](img/UFPR.png)
-
-:::
-
-::: {.g-col-10}
-::: {.home-intro}
-
-Bachelor of Statistics and Data Science <br>
-Expected conclusion in 2026
-
-:::
-:::
 :::
 :::
 
+::: h3
+Federal University of Paraná (**[UFPR](https://ufpr.br/)**) <br>
+<h5> **Bachelor of Statistics and Data Science**  <br>
+Expected conclusion in 2026 </h5>
+:::
+
+:::
+
+---
+
+::: {.d-inline-flex style="align-items:baseline"}
+::: p-2
+::: {.light-logo}
+![](img/uno2.png){width="80px"}
+:::
+:::
+
+::: h3
+University of West Santa Catarina (**[UNOESC](https://www.unoesc.edu.br/)**)
+<h5> **Bachelor of Accountancy**  <br>
+Completed in 2012 </h5>
+:::
+
+:::
+
+:::
+:::
+::::
+
+
+::::{.columns}
+::: {.light-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.light-header}
+EXTRACURRICULAR ACTIVITIES
+
+:::
+:::
+:::
+::::
+
+:::: {.columns}
+
+::: {.light-bg}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.custom-table}
+| Course                                                              | Year | Hours      | Institution                           |
+|---------------------------------------------------------------------|:----:|:----------:|---------------------------------------|
+| SQL for Data Analysis	                                              | 2023 | 11,5 Hours	| Udemy                                 | 
+| Microsoft Power BI Professional Training  	                        | 2022 | 19,5 Hours	| Udemy                                 | 
+| LGPD, Data Governance and Metadata Management	                      | 2022 | 78 Hours	  | Data Science Academy                  | 
+| Blockchain Engineer Training	                                      | 2022 | 18 Hours	  | Udemy                                 | 
+| Master DAX – Project-focused Power BI	                              | 2022 | 13 Hours	  | Udemy                                 | 
+| Microsoft Power BI for Data Science	                                | 2021 | 72 Hours	  | Data Science Academy                  | 
+| Accounts Payable, Receivable and Treasury Management	              | 2020 | 8 Hours    |	Meta Cursos e Treinamentos            | 
+| Training in Interpretation of the Requirements of NBR ISO 9001:2015 | 2019 | 24 Hours	  | Padronizze Consultoria e Treinamentos |
+| Withholding Taxes 	                                                | 2019 | 8 Hours	  | Meta Cursos e Treinamentos            |
+| Microeconomics Principles	                                          | 2017 | 12 Hours	  | Coursera                              |
+| Fundamentals of Cost Management	                                    | 2012 | 12 Hours	  | FGV                                   |
+| Tax Management	                                                    | 2011 | 12 Hours	  | Unoesc                                |
+
+:::
+
+
+
+
+:::
 
 ::: {.column .col-v-center width="20%"}
 :::
@@ -57,18 +118,19 @@ Expected conclusion in 2026
 :::
 ::::
 
+::::
 
-
+:::: dark-mode
 
 ::::{.columns}
-::: {.light-section}
+::: {.dark-section}
 ::: {.column .col-v-center width="15%"}
 :::
 
 ::: {.column .col-v-center width="70%"}
 
-::: {.light-header}
-Federal University of Paraná (**[UFPR](https://ufpr.br/)**)
+::: {.dark-header}
+EDUCATION
 
 :::
 :::
@@ -80,85 +142,90 @@ Federal University of Paraná (**[UFPR](https://ufpr.br/)**)
 
 :::: {.columns}
 
-::: {.light-bg}
+::: {.dark-bg}
 ::: {.column .col-v-center width="15%"}
 :::
 
 ::: {.column .col-v-center width="70%"}
 
-::: {.grid}
-::: {.g-col-2}
-
-::: {.light-logo}
-![](img/UFPR.png){style="border-radius: 5%"}
-
+::: {.d-inline-flex style="align-items:baseline"}
+::: p-2
+::: {.dark-logo}
+![](img/UFPR.png)
 :::
 :::
 
-::: {.g-col-10}
-
-<br>
-### **Bachelor of Statistics and Data Science** <br>
-### Expected conclusion in 2026
-
-
-:::
-:::
-:::
-
-
-::: {.column .col-v-center width="10%"}
+::: h3
+Federal University of Paraná (**[UFPR](https://ufpr.br/)**) <br>
+<h5> **Bachelor of Statistics and Data Science**  <br>
+Expected conclusion in 2026 </h5>
 :::
 
 :::
-::::
 
+---
 
-
-
-::::{.columns}
-::: {.light-section}
-::: {.column .col-v-center width="15%"}
+::: {.d-inline-flex style="align-items:baseline"}
+::: p-2
+::: {.dark-logo}
+![](img/uno2.png){width="80px"}
+:::
 :::
 
-::: {.column .col-v-center width="70%"}
-
-::: {.light-header}
+::: h3
 University of West Santa Catarina (**[UNOESC](https://www.unoesc.edu.br/)**)
+<h5> **Bachelor of Accountancy**  <br>
+Completed in 2012 </h5>
+:::
+
+:::
+
+:::
+:::
+::::
+
+::::{.columns}
+::: {.dark-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.dark-header}
+EXTRACURRICULAR ACTIVITIES
 
 :::
 :::
 :::
 ::::
 
-
-
-
 :::: {.columns}
 
-::: {.light-bg}
+::: {.dark-bg}
 ::: {.column .col-v-center width="15%"}
 :::
 
 ::: {.column .col-v-center width="70%"}
 
-::: {.grid}
-::: {.g-col-2}
-::: {.light-logo}
-![](img/unoesc.png){style="border-radius: 5%"}
-:::
+::: {.custom-table}
+| Course                                                              | Year | Hours      | Institution                           |
+|---------------------------------------------------------------------|:----:|:----------:|---------------------------------------|
+| SQL for Data Analysis	                                              | 2023 | 11,5 Hours	| Udemy                                 | 
+| Microsoft Power BI Professional Training  	                        | 2022 | 19,5 Hours	| Udemy                                 | 
+| LGPD, Data Governance and Metadata Management	                      | 2022 | 78 Hours	  | Data Science Academy                  | 
+| Blockchain Engineer Training	                                      | 2022 | 18 Hours	  | Udemy                                 | 
+| Master DAX – Project-focused Power BI	                              | 2022 | 13 Hours	  | Udemy                                 | 
+| Microsoft Power BI for Data Science	                                | 2021 | 72 Hours	  | Data Science Academy                  | 
+| Accounts Payable, Receivable and Treasury Management	              | 2020 | 8 Hours    |	Meta Cursos e Treinamentos            | 
+| Training in Interpretation of the Requirements of NBR ISO 9001:2015 | 2019 | 24 Hours	  | Padronizze Consultoria e Treinamentos |
+| Withholding Taxes 	                                                | 2019 | 8 Hours	  | Meta Cursos e Treinamentos            |
+| Microeconomics Principles	                                          | 2017 | 12 Hours	  | Coursera                              |
+| Fundamentals of Cost Management	                                    | 2012 | 12 Hours	  | FGV                                   |
+| Tax Management	                                                    | 2011 | 12 Hours	  | Unoesc                                |
+
 :::
 
-::: {.g-col-10}
-
-<br>
-### Bachelor of Accountancy <br>
-### Completed in 2012
-
 :::
-:::
-:::
-
 
 ::: {.column .col-v-center width="20%"}
 :::
