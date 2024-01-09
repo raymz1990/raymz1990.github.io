@@ -147,6 +147,7 @@
   /* --- skills --- */
   .skills {
     margin-top: 20px;
+    margin-left: 20px;
     position: center;
     font-family: 'Montserrat';
     text-align: center;
