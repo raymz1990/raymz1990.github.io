@@ -36,10 +36,6 @@
   --quarto-font-monospace: "Montserrat";
 }
 
-:root {
-  --quarto-font-monospace: "IBM Plex Sans";
-}
-
 code span.ot {
   color: #efef8f;
   font-style: inherit;

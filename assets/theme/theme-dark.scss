@@ -9,23 +9,23 @@ $navbar-hl:                 #eaeaea !default;
 
 
 
-$font-family-sans-serif: 'IBM Plex Sans';
-$font-family-monospace: 'IBM Plex Sans';
+$font-family-sans-serif: 'Montserrat';
+$font-family-monospace: 'Montserrat';
 
 /*-- scss:rules --*/
 @font-face {
-    font-family: 'Teko';
-    src: url('static/fonts/teko-v15-latin-regular.woff') format('woff2'),
-         url('static/fonts/teko-v15-latin-regular.woff2') format('woff');
+    font-family: 'Montserrat';
+    src: url('static/fonts/Montserrat-Regular.ttf') format('ttf'),
+         url('static/fonts/Montserrat-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'IBM Plex Sans';
-    src: url('static/fonts/IBMPlexSans-Regular.woff2') format('woff2'),
-        url('static/fonts/IBMPlexSans-Regular.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('static/fonts/Montserrat-Regular.ttf') format('ttf'),
+        url('static/fonts/Montserrat-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }

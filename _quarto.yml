@@ -29,20 +29,12 @@ website:
       - href: https://github.com/raymz1990
         text: "[{{< fa brands github >}}]{class='quarto-navbar-tools-item'}"
         target: _blank
-<<<<<<< HEAD
       - href: https://www.linkedin.com/in/raymundopilz/
-=======
-      - href: https://linkedin.com/raymundopilz
->>>>>>> 5bea3f2c02210c6f7705bd10938698d294cbc195
         text: "{{< iconify entypo-social linkedin-with-circle >}}"
         target: _blank
       - href: en/index.qmd
         text: "{{< iconify emojione flag-for-united-states >}}"
-<<<<<<< HEAD
     tools:
-=======
-        target: _blank
->>>>>>> 5bea3f2c02210c6f7705bd10938698d294cbc195
   page-footer:
     center: |
       <b>© 2024 Raymundo Eduardo Pilz</b>  <br>
