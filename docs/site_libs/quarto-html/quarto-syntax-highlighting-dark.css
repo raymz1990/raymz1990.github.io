@@ -33,6 +33,10 @@
 
 /* other quarto variables */
 :root {
+  --quarto-font-monospace: "Montserrat";
+}
+
+:root {
   --quarto-font-monospace: "IBM Plex Sans";
 }
 

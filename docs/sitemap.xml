@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://raymz1990.github.io/index.html</loc>
-    <lastmod>2024-01-08T03:19:24.624Z</lastmod>
+    <lastmod>2024-01-09T02:43:47.059Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/project/churn/index.html</loc>
@@ -30,19 +30,19 @@
   </url>
   <url>
     <loc>https://raymz1990.github.io/content/project/churn/index.html</loc>
-    <lastmod>2024-01-08T02:49:08.173Z</lastmod>
+    <lastmod>2024-01-09T02:43:16.109Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/content/education/index.html</loc>
-    <lastmod>2024-01-08T03:19:41.824Z</lastmod>
+    <lastmod>2024-01-09T02:39:21.123Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/content/experience/index.html</loc>
-    <lastmod>2024-01-08T03:19:34.793Z</lastmod>
+    <lastmod>2024-01-09T02:42:15.455Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/content/project/index.html</loc>
-    <lastmod>2024-01-08T02:49:04.134Z</lastmod>
+    <lastmod>2024-01-09T02:42:44.421Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/english_website/content/experience/index.html</loc>
@@ -58,11 +58,11 @@
   </url>
   <url>
     <loc>https://raymz1990.github.io/en/content/education/index.html</loc>
-    <lastmod>2024-01-07T18:16:44.494Z</lastmod>
+    <lastmod>2024-01-09T00:44:14.206Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/en/content/experience/index.html</loc>
-    <lastmod>2024-01-07T18:16:45.947Z</lastmod>
+    <lastmod>2024-01-09T00:44:15.803Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/en/content/project/churn/index.html</loc>
@@ -70,10 +70,14 @@
   </url>
   <url>
     <loc>https://raymz1990.github.io/en/content/project/index.html</loc>
-    <lastmod>2024-01-07T18:16:53.127Z</lastmod>
+    <lastmod>2024-01-09T00:44:23.573Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/en/index.html</loc>
-    <lastmod>2024-01-07T18:16:56.941Z</lastmod>
+    <lastmod>2024-01-09T00:44:27.703Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raymz1990.github.io/en/content/project/en-churn/index.html</loc>
+    <lastmod>2024-01-09T00:44:19.423Z</lastmod>
   </url>
 </urlset>

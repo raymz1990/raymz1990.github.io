@@ -26,12 +26,15 @@ website:
       - href: content/project/index.qmd
         text: Projects
     right:
-      - text: "[{{< fa brands github >}}]{class='quarto-navbar-tools-item'}"
-        href: https://github.com/raymz1990
-      - text: "{{< iconify entypo-social linkedin-with-circle >}}"
-        href: https://linkedin.com/raymundopilz
-      - text: "{{< iconify emojione flag-for-united-states >}}"
-        href: en/index.qmd
+      - href: https://github.com/raymz1990
+        text: "[{{< fa brands github >}}]{class='quarto-navbar-tools-item'}"
+        target: _blank
+      - href: https://www.linkedin.com/in/raymundopilz/
+        text: "{{< iconify entypo-social linkedin-with-circle >}}"
+        target: _blank
+      - href: en/index.qmd
+        text: "{{< iconify emojione flag-for-united-states >}}"
+    tools:
   page-footer:
     center: |
       <b>© 2024 Raymundo Eduardo Pilz</b>  <br>
@@ -41,12 +44,15 @@ website:
 format:
   html:
     theme: 
-      light: [flatly, theme-light.scss]
-      dark: [flatly, theme-dark.scss]
+      light: [flatly, assets/theme/theme-light.scss]
+      dark: [flatly, assets/theme/theme-dark.scss]
     css: 
-      - styles.css
-      - academicons.css
+      - assets/css/styles.css
+      - assets/css/academicons.css
+    code-copy: true
+    code-overflow: wrap
     toc: true
     highlight-style: zenburn
+
 execute: 
   freeze: auto

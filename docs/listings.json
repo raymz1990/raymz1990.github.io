@@ -2,8 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
-      "/content/project/churn/index.html",
-      "/en/content/project/churn/index.html"
+      "/content/project/churn/index.html"
     ]
   },
   {
@@ -35,7 +34,7 @@
   {
     "listing": "/en/content/project/index.html",
     "items": [
-      "/en/content/project/churn/index.html"
+      "/en/content/project/en-churn/index.html"
     ]
   },
   {

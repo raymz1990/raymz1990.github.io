@@ -83,6 +83,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-projects-dark .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-projects-dark'] = new List('listing-projects-dark', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NYKKWQWQLX"></script>
 
@@ -97,9 +125,10 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="academicons.css">
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/academicons.css">
+<link rel="stylesheet" href="content/home/css/index.css">
+<link rel="stylesheet" href="assets/css/non-posts.css">
 <meta property="og:title" content="Raymundo Eduardo Pilz">
 <meta property="og:description" content="Raymundo Pilz’s website about work, graphics and statistics">
 <meta property="og:image" content="https://raymz1990.github.io/static/img/avatar.svg">
@@ -137,11 +166,11 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/raymz1990" rel="" target="">
+    <a class="nav-link" href="https://github.com/raymz1990" rel="" target="_blank">
  <span class="menu-text"><span class="quarto-navbar-tools-item"><i class="fa-brands fa-github" aria-label="github"></i></span></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://linkedin.com/raymundopilz" rel="" target="">
+    <a class="nav-link" href="https://www.linkedin.com/in/raymundopilz/" rel="" target="_blank">
  <span class="menu-text"><iconify-icon inline="" icon="entypo-social:linkedin-with-circle"></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
@@ -181,14 +210,14 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 <div class="blank-space">
 
 </div>
-<section id="raymundo-eduardo-pilz" class="level1">
+<section id="raymundo-eduardo-pilz" class="level1" style="text-align: center;">
 <h1>Raymundo Eduardo Pilz</h1>
 <p><br></p>
+</section>
 <div class="home-intro">
 <p>I am a <em>Statistics</em> student at the Federal University of Paraná (<strong><a href="https://ufpr.br/">UFPR</a></strong>). I am deeply passionate about developing statistical concepts and transforming raw data into valuable insights.</p>
 <p>With a bachelor’s degree in <em>Accounting</em> from the University of West Santa Catarina (<strong><a href="https://www.unoesc.edu.br/">UNOESC</a></strong>), I possess the skill to translate numbers into compelling narratives. Specializing in providing in-depth reports detailing financial and operational impacts, I offer users profound insights that drive decision-making.</p>
 </div>
-</section>
 </div><div class="column col-v-center" style="width:20%;">
 
 </div>
@@ -254,9 +283,11 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 </div>
 </div>
 <div class="columns">
+<div class="light-bg">
 <div class="column col-v-center" style="width:15%;">
 
-</div><div class="column col-v-center" style="width:70%;">
+</div>
+<div class="column col-v-center" style="width:70%;">
 <div id="listing-projects" class="quarto-listing quarto-listing-container-table">
 
 <table class="quarto-listing-table table table-hover">
@@ -271,19 +302,10 @@ Date
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="jupyter,Python,Machine Learning" data-listing-date-sort="1701313200000" data-listing-file-modified-sort="1704255723237" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Análise de Churn em uma Instituição Financeira" data-listing-filename-sort="index.md" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="0" data-categories="jupyter,Python,Machine Learning" data-listing-date-sort="1701313200000" data-listing-file-modified-sort="1704760926131" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Análise de Churn em uma Instituição Financeira" data-listing-filename-sort="index.md" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./content/project/churn/index.html" class="title listing-title">Análise de Churn em uma Instituição Financeira</a>
-</td>
-<td>
-<span class="listing-date">Nov 30, 2023</span>
-</td>
-</tr>
-<tr data-index="1" data-categories="jupyter,Python,Machine Learning" data-listing-date-sort="1701313200000" data-listing-file-modified-sort="1704508096860" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Análise de Churn em uma Instituição Financeira" data-listing-filename-sort="index.md" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./en/content/project/churn/index.html" class="title listing-title">Análise de Churn em uma Instituição Financeira</a>
 </td>
 <td>
 <span class="listing-date">Nov 30, 2023</span>
@@ -299,38 +321,6 @@ No matching items
 <div class="all-link">
 <p><a href="project/">more projects</a></p>
 </div>
-</div>
-</div>
-<div class="columns">
-<div class="light-section">
-<div class="column col-v-center" style="width:15%;">
-
-</div>
-<div class="column col-v-center" style="width:70%;">
-<div class="light-header">
-<p>GitHub Activity</p>
-</div>
-</div>
-</div>
-</div>
-<div class="columns">
-<div class="home-section">
-<div class="column col-v-center" style="width:15%;">
-
-</div>
-<div class="column col-v-center" style="width:70%;">
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-</script>
-<div class="l-body-outset">
-<a href="https://github.com/raymz1990">
-<div class="calendar">
-<p>Loading my github calendar data.</p>
-</div>
-</a><p><a href="https://github.com/raymz1990"></a></p>
-</div>
-<script>
-GitHubCalendar(".calendar", "raymz1990", { responsive: true });
-</script>
 </div>
 </div>
 </div>
@@ -352,14 +342,14 @@ GitHubCalendar(".calendar", "raymz1990", { responsive: true });
 <div class="blank-space">
 
 </div>
-<section id="raymundo-eduardo-pilz-1" class="level1">
+<section id="raymundo-eduardo-pilz-1" class="level1" style="text-align: center;">
 <h1>Raymundo Eduardo Pilz</h1>
 <p><br></p>
+</section>
 <div class="home-intro">
 <p>I am a <em>Statistics</em> student at the Federal University of Paraná (<strong><a href="https://ufpr.br/">UFPR</a></strong>). I am deeply passionate about developing statistical concepts and transforming raw data into valuable insights.</p>
 <p>With a bachelor’s degree in <em>Accounting</em> from the University of West Santa Catarina (<strong><a href="https://www.unoesc.edu.br/">UNOESC</a></strong>), I possess the skill to translate numbers into compelling narratives. Specializing in providing in-depth reports detailing financial and operational impacts, I offer users profound insights that drive decision-making.</p>
 </div>
-</section>
 </div><div class="column col-v-center" style="width:20%;">
 
 </div>
@@ -418,54 +408,51 @@ GitHubCalendar(".calendar", "raymz1990", { responsive: true });
 
 </div>
 <div class="column col-v-center" style="width:70%;">
-<div class="dark-header">
+<div class="light-header">
 <p>PROJECTS</p>
 </div>
 </div>
 </div>
 </div>
 <div class="columns">
+<div class="dark-bg">
 <div class="column col-v-center" style="width:15%;">
 
-</div><div class="column col-v-center" style="width:70%;">
-<div id="projects">
+</div>
+<div class="column col-v-center" style="width:70%;">
+<div id="listing-projects-dark" class="quarto-listing quarto-listing-container-table">
 
+<table class="quarto-listing-table table table-hover">
+<thead>
+<tr>
+<th>
+Title
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="jupyter,Python,Machine Learning" data-listing-date-sort="1701313200000" data-listing-file-modified-sort="1704760926131" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Análise de Churn em uma Instituição Financeira" data-listing-filename-sort="index.md" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./content/project/churn/index.html" class="title listing-title">Análise de Churn em uma Instituição Financeira</a>
+</td>
+<td>
+<span class="listing-date">Nov 30, 2023</span>
+</td>
+</tr>
+</tbody>
+
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
 </div>
 <div class="all-link">
 <p><a href="project/">more projects</a></p>
 </div>
-</div>
-</div>
-<div class="columns">
-<div class="dark-section">
-<div class="column col-v-center" style="width:15%;">
-
-</div>
-<div class="column col-v-center" style="width:70%;">
-<div class="dark-header">
-<p>GitHub Activity</p>
-</div>
-</div>
-</div>
-</div>
-<div class="columns">
-<div class="home-section">
-<div class="column col-v-center" style="width:15%;">
-
-</div>
-<div class="column col-v-center" style="width:70%;">
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-</script>
-<div class="l-body-outset">
-<a href="https://github.com/raymz1990">
-<div class="calendar">
-<p>Loading my github calendar data.</p>
-</div>
-</a><p><a href="https://github.com/raymz1990"></a></p>
-</div>
-<script>
-GitHubCalendar(".calendar", "raymz1990", { responsive: true });
-</script>
 </div>
 </div>
 </div>
@@ -835,6 +822,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+<script src="./assets/js/styles.js"></script>
+<script src="./assets/js/non-posts.js"></script>
 
 
 

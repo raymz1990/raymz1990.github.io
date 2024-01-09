@@ -4,7 +4,7 @@ listing:
   id: projects
   fields: [image,title, description]
   contents: 
-    - churn
+    - en-churn
   type: grid
   grid-columns: 3
   categories: true

@@ -3,9 +3,9 @@
 pagetitle: "Raymundo Eduardo Pilz"
 page-layout: custom
 toc: false
-css: index.css
+css: [content/home/css/index.css, assets/css/non-posts.css]
 shortcodes:
-  - socials.lua
+  - assets/lua/socials.lua
 listing: 
   - id: projects
     fields: [title,date]
@@ -19,6 +19,22 @@ listing:
     sort-ui: false
     filter-ui: false
     sort: "date desc"
+  - id: projects-dark
+    fields: [title,date]
+    contents: 
+    - content/project/churn
+    type: table
+    table-hover: true
+    date-format: medium
+    image-align: left
+    max-items: 5
+    sort-ui: false
+    filter-ui: false
+    sort: "date desc"
+include-after-body:
+  text: |
+    <script src='/assets/js/styles.js'></script>
+    <script src='/assets/js/non-posts.js'></script>
 ---
 
 :::: light-mode
@@ -44,11 +60,12 @@ listing:
 :::
 
 ::: {.blank-space}
-
 :::
 
-# Raymundo Eduardo Pilz 
+<div style="text-align: center;">
+# Raymundo Eduardo Pilz
 <br>
+</div>
 
 ::: {.home-intro}
 I am a *Statistics* student at the Federal University of Paraná (**[UFPR](https://ufpr.br/)**). I am deeply passionate about developing statistical concepts and transforming raw data into valuable insights.
@@ -149,6 +166,7 @@ PROJECTS
 
 
 ::::{.columns}
+::: {.light-bg}
 
 ::: {.column .col-v-center width="15%"}
 :::
@@ -163,50 +181,6 @@ PROJECTS
 :::
 :::
 
-::::
-
-::::{.columns}
-::: {.light-section}
-::: {.column .col-v-center width="15%"}
-:::
-
-::: {.column .col-v-center width="70%"}
-
-::: {.light-header}
-GitHub Activity
-:::
-:::
-
-:::
-
-::::
-
-
-::::{.columns}
-::: {.home-section}
-::: {.column .col-v-center width="15%"}
-:::
-
-::: {.column .col-v-center width="70%"}
-
-
-
-<script
-  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-</script>
-
-<div class="l-body-outset">
-<a href="https://github.com/raymz1990">
-<div class="calendar">
-Loading my github calendar data.
-</div>
-</a>
-</div>
-
-<script>
-GitHubCalendar(".calendar", "raymz1990", { responsive: true });
-</script>
-:::
 :::
 ::::
 
@@ -238,11 +212,12 @@ GitHubCalendar(".calendar", "raymz1990", { responsive: true });
 :::
 
 ::: {.blank-space}
-
 :::
 
-# Raymundo Eduardo Pilz 
+<div style="text-align: center;">
+# Raymundo Eduardo Pilz
 <br>
+</div>
 
 ::: {.home-intro}
 I am a *Statistics* student at the Federal University of Paraná (**[UFPR](https://ufpr.br/)**). I am deeply passionate about developing statistical concepts and transforming raw data into valuable insights.
@@ -323,7 +298,7 @@ Alteryx
 
 ::: {.column .col-v-center width="70%"}
 
-::: {.dark-header}
+::: {.light-header}
 PROJECTS
 :::
 :::
@@ -334,13 +309,14 @@ PROJECTS
 
 
 ::::{.columns}
+::: {.dark-bg}
 
 ::: {.column .col-v-center width="15%"}
 :::
 
 ::: {.column .col-v-center width="70%"}
 
-:::{#projects}
+:::{#projects-dark}
 :::
 
 ::: {.all-link}
@@ -348,47 +324,6 @@ PROJECTS
 :::
 :::
 
-::::
-
-::::{.columns}
-::: {.dark-section}
-::: {.column .col-v-center width="15%"}
-:::
-
-::: {.column .col-v-center width="70%"}
-
-::: {.dark-header}
-GitHub Activity
-:::
-:::
-
-:::
-
-::::
-
-::::{.columns}
-::: {.home-section}
-::: {.column .col-v-center width="15%"}
-:::
-
-::: {.column .col-v-center width="70%"}
-
-<script
-  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-</script>
-
-<div class="l-body-outset">
-<a href="https://github.com/raymz1990">
-<div class="calendar">
-Loading my github calendar data.
-</div>
-</a>
-</div>
-
-<script>
-GitHubCalendar(".calendar", "raymz1990", { responsive: true });
-</script>
-:::
 :::
 ::::
 
