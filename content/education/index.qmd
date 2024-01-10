@@ -32,20 +32,17 @@ EDUCATION
 ::: {.d-inline-flex style="align-items:baseline"}
 ::: p-2
 ::: {.light-logo}
-![](img/UFPR.png){width="80px"}
+![](img/UFPR.png)
 :::
 :::
 
 ::: h3
-Federal University of Paraná (**[UFPR](https://ufpr.br/)**)
-:::
-:::
-
-::: {.margin-right}
-**Bachelor of Statistics and Data Science** <br>
-Bachelor of Statistics and Data Science <br>
+Federal University of Paraná (**[UFPR](https://ufpr.br/)**) <br>
+<h5> **Bachelor of Statistics and Data Science**  <br>
+Expected conclusion in 2026 </h5>
 :::
 
+:::
 
 ---
 
@@ -58,17 +55,13 @@ Bachelor of Statistics and Data Science <br>
 
 ::: h3
 University of West Santa Catarina (**[UNOESC](https://www.unoesc.edu.br/)**)
-:::
-:::
-
-
-::: {.margin-right}
-**Bachelor of Accountancy** <br>
-Completed in 2012
-:::
+<h5> **Bachelor of Accountancy**  <br>
+Completed in 2012 </h5>
 :::
 
+:::
 
+:::
 :::
 ::::
 
@@ -155,22 +148,19 @@ EDUCATION
 
 ::: {.column .col-v-center width="70%"}
 
-
 ::: {.d-inline-flex style="align-items:baseline"}
 ::: p-2
 ::: {.dark-logo}
-![](img/UFPR.png){width="80px"}
+![](img/UFPR.png)
 :::
 :::
 
 ::: h3
-Federal University of Paraná (**[UFPR](https://ufpr.br/)**)
-:::
+Federal University of Paraná (**[UFPR](https://ufpr.br/)**) <br>
+<h5> **Bachelor of Statistics and Data Science**  <br>
+Expected conclusion in 2026 </h5>
 :::
 
-::: {.margin-right}
-**Bachelor of Statistics and Data Science** <br>
-Expected conclusion in 2026
 :::
 
 ---
@@ -184,19 +174,13 @@ Expected conclusion in 2026
 
 ::: h3
 University of West Santa Catarina (**[UNOESC](https://www.unoesc.edu.br/)**)
-:::
-:::
-
-::: {.margin-right}
-**Bachelor of Accountancy** <br>
-Completed in 2012
+<h5> **Bachelor of Accountancy**  <br>
+Completed in 2012 </h5>
 :::
 
 :::
 
-::: {.column .col-v-center width="20%"}
 :::
-
 :::
 ::::
 

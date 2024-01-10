@@ -7,6 +7,10 @@ h2 {
   font-size: 2.5em;
 }
 
+h5 {
+  font-size: 0.575em;
+  }
+
 body {
 font-family: 'Montserrat';
 }
@@ -117,6 +121,14 @@ div.quarto-post .thumbnail img {
   .light-logo {
     border-radius: 10%;
     background-color: #4e734d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .light-logo img {
+    width: 100px; 
+    margin-top: 10px;
   }
 
 /*dark mode*/  
@@ -138,6 +150,14 @@ div.quarto-post .thumbnail img {
   .dark-logo {
     border-radius: 10%;
     background-color: #383732;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dark-logo img {
+    width: 100px; 
+    margin-top: 10px;
   }
 
 /*education*/
