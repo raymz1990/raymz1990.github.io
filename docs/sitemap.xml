@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://raymz1990.github.io/content/education/index.html</loc>
+<<<<<<< HEAD
     <lastmod>2024-01-10T00:48:33.857Z</lastmod>
   </url>
   <url>
@@ -15,5 +16,8 @@
   <url>
     <loc>https://raymz1990.github.io/content/project/index.html</loc>
     <lastmod>2024-01-09T03:55:03.577Z</lastmod>
+=======
+    <lastmod>2024-01-09T13:37:55.227Z</lastmod>
+>>>>>>> f0b3dbab13f78eca3d928484016a5a88ab59c95c
   </url>
 </urlset>
