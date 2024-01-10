@@ -34,7 +34,6 @@ website:
         target: _blank
       - href: en/index.qmd
         text: "{{< iconify emojione flag-for-united-states >}}"
-    tools:
   page-footer:
     center: |
       <b>© 2024 Raymundo Eduardo Pilz</b>  <br>
@@ -53,6 +52,15 @@ format:
     code-overflow: wrap
     toc: true
     highlight-style: zenburn
+    code-fold: true
+    code-link: true
+    link-external-icon: false
+    link-external-newwindow: true
+    grid:
+      body-width: 1100px
+      sidebar-width: 300px
+      margin-width: 300px
+      gutter-width: 1.5rem
 
 execute: 
   freeze: auto

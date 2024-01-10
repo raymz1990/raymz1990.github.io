@@ -105,9 +105,32 @@
   }
 
   a.navbar-brand {
+    background-image: url('../static/img/favicon.png');
     background-size: contain;
     background-repeat: no-repeat;
     padding-left: 45px;
+    position: relative;
+    width: 170px;
+    left: 15px;
+  }
+
+/* tools */
+  .quarto-navbar-tools > div.nav-item {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+  }
+  
+  .navbar-brand-container {
+    display: block;
+    flex: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  
+  .navbar {
+    --bs-navbar-padding-y: 0.5rem;
   }
 
 /* navbar kink */
@@ -143,22 +166,14 @@
     max-height: 43px;
     width: auto;
     padding-right: 6px;
-<<<<<<< HEAD
     position: center;
-=======
->>>>>>> 5bea3f2c02210c6f7705bd10938698d294cbc195
   }
 
   .active {
     border-bottom: 1px solid #a198a6;
   }
 
-  .navbar-brand {
-    position: relative;
-    width: 170px;
-    left: 15px;
-    background-size: contain;
-  }
+  
 
   footer.footer .nav-footer, #quarto-header nav {
     padding-left: 1em;
@@ -175,25 +190,6 @@
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 1em;
-  }
-
-/* tools */
-  .quarto-navbar-tools > div.nav-item {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    --bs-nav-link-color: var(--bs-navbar-color);
-    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
-  }
-  
-  .navbar-brand-container {
-    display: block;
-    flex: none;
-    padding-top: 2px;
-    padding-bottom: 2px;
-  }
-  
-  .navbar {
-    --bs-navbar-padding-y: 0.5rem;
   }
 
 /* for mobile */
