@@ -18,6 +18,13 @@ website:
     logo: "static/logo.svg"
     title: false
     background: primary
+    tools:
+      - href: https://github.com/raymz1990
+        icon: github
+        target: _blank
+      - href: https://www.linkedin.com/in/raymundopilz/
+        icon: linkedin
+        target: _blank
     left:
       - href: content/experience/index.qmd
         text: Experience 
@@ -26,12 +33,6 @@ website:
       - href: content/project/index.qmd
         text: Projects
     right:
-      - href: https://github.com/raymz1990
-        text: "[{{< fa brands github >}}]{class='quarto-navbar-tools-item'}"
-        target: _blank
-      - href: https://www.linkedin.com/in/raymundopilz/
-        text: "{{< iconify entypo-social linkedin-with-circle >}}"
-        target: _blank
       - href: en/index.qmd
         text: "{{< iconify emojione flag-for-united-states >}}"
   page-footer:

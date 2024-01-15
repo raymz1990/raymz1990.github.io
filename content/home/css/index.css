@@ -147,14 +147,20 @@
   /* --- skills --- */
   .skills {
     margin-top: 20px;
-    margin-left: 20px;
-    position: center;
-    font-family: 'Montserrat';
+    position: relative;
     text-align: center;
+    font-family: 'Montserrat';
     font-size: 1.8em;
     font-weight: 400;
   }
+  
+  .skills-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
+  /* --- --- */
 
   .monospace {
     text-align: center;

@@ -5,6 +5,7 @@ listing:
   fields: [image,title, description]
   contents: 
     - churn
+    - population-pyramid
   type: grid
   grid-columns: 3
   categories: true

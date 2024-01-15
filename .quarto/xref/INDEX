@@ -61,5 +61,14 @@
   },
   "en/content/project/en-churn/index.md": {
     "index.html": "6854cda4"
+  },
+  "content/project/population-pyramid/index.rmd": {
+    "index.html": "196afd9b"
+  },
+  "content/project/population-pyramid/index - Copia.md": {
+    "index - Copia.html": "7a0bdfd2"
+  },
+  "content/project/population-pyramid/index.qmd": {
+    "index.html": "5e02e1bd"
   }
 }

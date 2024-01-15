@@ -105,7 +105,7 @@
   }
 
   a.navbar-brand {
-    background-image: url('../static/img/favicon.png');
+    /*background-image: url('../static/img/favicon.png');*/
     background-size: contain;
     background-repeat: no-repeat;
     padding-left: 45px;
@@ -115,23 +115,35 @@
   }
 
 /* tools */
-  .quarto-navbar-tools > div.nav-item {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    --bs-nav-link-color: var(--bs-navbar-color);
-    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
-  }
-  
-  .navbar-brand-container {
-    display: block;
-    flex: none;
-    padding-top: 2px;
-    padding-bottom: 2px;
-  }
-  
-  .navbar {
-    --bs-navbar-padding-y: 0.5rem;
-  }
+   
+  /* Ferramentas na barra de navegação */
+    .quarto-navbar-tools > div.nav-item {
+      padding: 0 0.25em;
+      --bs-nav-link-color: var(--bs-navbar-color);
+      --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    }
+
+  /* Ícones na barra de ferramentas */
+    .quarto-navbar-tools a {
+      font-size: 24px; 
+    }
+
+  /* Estilo de hover para ícones */
+    .quarto-navbar-tools a:hover {
+      color: #99978d !important; 
+    }
+
+  /* Container da marca na barra de navegação */
+    .navbar-brand-container {
+      display: block;
+      flex: none;
+      padding: 2px 0;
+    }
+
+  /* Barra de navegação geral */
+    .navbar {
+      --bs-navbar-padding-y: 0.5rem;
+    }
 
 /* navbar kink */
 @media screen and (min-width: 999px) {
