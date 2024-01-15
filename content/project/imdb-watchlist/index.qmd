@@ -65,6 +65,9 @@ extractCountry <- function(url) {
   return(countries)
 }
 
+
+#### 
+
 # Invoca a função salva e carregar os dados
 dcountry <- dcountry %>%
   rowwise() %>%
@@ -78,19 +81,21 @@ dcountry <- dcountry %>%
   group_by(country) %>%
   summarise(freq = n())
 
-dcountry1 <- dcountry
-
 dcountry$iso3 <- countrycode(sourcevar = dcountry$country,
                              origin = "country.name",
                              destination = "iso3c")
 
 g6_data <- dcountry
 
+
+
 get_lat_long <- function(country_name) {
   world <- map_data("world")
   country_data <- world[world$region %in% country_name, c("region", "long", "lat")]
   return(country_data)
 }
+
+
 
 # Obtendo coordenadas de latitude e longitude
 coordenadas <- lapply(dcountry$country, get_lat_long)
@@ -137,42 +142,7 @@ mapa
 
 
 
-#------
-# Library
-# Exemplo de dados
-dados <- data.frame(
-  pais = c("Brazil", "United States", "United Kingdom"),  # Nomes dos países
-  valor = c(100, 200, 300)  # Exemplo de valores associados às bolhas
-)
 
-# Converta os nomes dos países em códigos ISO de países
-dados$iso3 <- countrycode(sourcevar = dados$pais, origin = "country.name", destination = "iso3c")
-
-# Carregue o pacote 'maps' para obter dados geográficos
-library(maps)
-
-# Obtenha dados geográficos para os países
-dados_geograficos <- map_data("world")
-
-# Mescle os dados geográficos com os dados dos países
-dados_completos <- merge(dados_geograficos, 
-                         dcountry, 
-                         by.x = "region",
-                         by.y = "iso3",
-                         all.x = TRUE)
-
-# Crie o bubble map usando ggplot2
-ggplot(data = dados_completos, 
-       aes(x = long, 
-           y = lat, 
-           size = freq,
-           fill = freq)) +
-  geom_polygon(color = "white") +  # Adicione contornos dos países
-  geom_point(shape = 21) +  # Adicione bolhas
-  scale_size_continuous(range = c(3, 20)) +  # Ajusta o intervalo de tamanho das bolhas
-  scale_fill_viridis_c() +  # Esquema de cores para as bolhas
-  theme_minimal() +
-  labs(title = "Bubble Map", x = "Longitude", y = "Latitude")
 
 
 
@@ -307,80 +277,9 @@ meutema <- function(){
 
 ## Graficos
 
-### Grafico 1
-
-```{r warning=F, message=F}
-# Calcular a contagem para cada tipo (Type) em fdata
-g1_data <- table(fdata$Type)
-
-# Total de assistidos
-total_assistido <- sum(g1_data)
-
-# Criar o dataframe e incluir as cores
-g1_data <- data.frame(Type = names(g1_data), 
-                      Qtde = as.numeric(g1_data))
-g1_data$Freq <- (g1_data$Qtde / total_assistido)
-
-# Mesclar com o dataframe de cores (dcolor)
-g1_data <- left_join(g1_data, dcolor, by = "Type")
+## Grafico 1
 
 
-# Caminho para as imagens
-caminho_cinema <- "./imagens/cinema.png"
-caminho_tv <- "./imagens/tv.png"
-
-# Função para criar rótulos com imagens
-criar_rotulo_com_imagem <- function(tipo) {
-  if (tipo == "Movie") {
-    return(htmltools::img(src = caminho_cinema, width = "50px"))
-  } else if (tipo == "TV Series") {
-    return(htmltools::img(src = caminho_tv, width = "50px"))
-  } else {
-    return(tipo)
-  }
-}
-
-
-## GRAFICO
-g2 <- plot_ly(
-  data = g1_data,
-  labels = ~Type,
-  values = ~Qtde,
-  type = "pie",
-  hole = 0.6, 
-  marker = list(colors = ~Color),  
-  textposition = "outside",
-  hoverinfo = "label+text+percent",
-  #text = ~paste(Type),
-  textinfo = "value",
-  showlegend = FALSE
-) %>%
-add_annotations(
-  text = format(total_assistido, big.mark = "."),  # Valor total
-  x = 0.5,  # Posição horizontal no centro do círculo (0 a 1)
-  y = 0.5,  # Posição vertical no centro do círculo (0 a 1)
-  showarrow = FALSE,  # Não mostrar seta de apontamento
-  font = list(family = fonte_titulo, 
-                size = 80, 
-                color = cor_titulo, 
-                bold = TRUE)  
-)# %>%
-# layout(
-#   title = list(
-#     text = "FILMES VS SÉRIES DE TV",
-#     font = list(family = fonte_titulo, 
-#                 size = tamanho_titulo, 
-#                 color = cor_titulo, 
-#                 bold = TRUE),
-#     x = 0.5#,  # Posição horizontal do título (0 a 1)
-#     #y = 0.9   # Posição vertical do título (0 a 1)
-#   )
-# )
-
-g2
-
-
-```
 
 
 
@@ -635,6 +534,7 @@ g5 <- g5_data %>%
 print(g5)
 ```
 
+## GRAFICO 6
 ```{r warning=F, message=F}
 
 g6_data <- d_paises
@@ -675,7 +575,7 @@ g6 <- ggplot(WorldData, aes(x = long, y = lat, group = group)) +
 
 
 
-### Criando layout de painel final
+## Criando layout de painel final
 ```{r warning=F, message=F}
 
 #IMPORTANDO IMAGENS
