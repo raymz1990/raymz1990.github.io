@@ -55,6 +55,9 @@ d_paises <- fread("./dados/dCountry.csv")
 dcountry <- select(d_paises, tconst)
 dcountry$url <- paste0("https://www.imdb.com/title/", dcountry$tconst, "/")
 
+# Defina o tempo limite global
+options(timeout = 120)
+
 # Criando a função 
 extractCountry <- function(url) {
   page <- read_html(url)
@@ -130,7 +133,7 @@ g6_data <- select()
 dcountry$iso3 <- countrycode(sourcevar = dcountry$country, origin = "country.name", destination = "iso3c")
 
 # Crie um mapa básico
-mapa <- leaflet(data = dcountry) %>%
+mapa <- leaflet(data = g6_data) %>%
   addTiles() %>% # Adicione o fundo do mapa
   addCircleMarkers(radius = ~10, # Tamanho das bolhas
                    color = "blue", 
@@ -147,6 +150,86 @@ mapa
 
 
 str(d_paises)
+```
+
+
+
+```{r}
+# Importando Bibliotecas
+library(rvest)
+library(dplyr)
+
+# Importando arquivo base
+d_paises <- fread("./dados/dCountry.csv")
+
+options(timeout = 120)
+
+
+dcountry <- select(d_paises, tconst)
+dcountry$url <- paste0("https://www.imdb.com/title/", dcountry$tconst, "/")
+
+
+# Defina uma função para extrair dados do site
+extractCountry <- function(url) {
+  # Lê a página HTML
+  page <- read_html(url)
+  
+  # Encontre os elementos <a> dentro da estrutura especificada
+  countries <- page %>%
+    html_nodes(".ipc-metadata-list-item__list-content-item--link[role='button']") %>%
+    html_text() %>%
+    paste(collapse = ", ")  # Concatena os países separados por vírgulas
+  
+  return(countries)
+}
+
+# Aplica a função à coluna 'url' e armazena o resultado na nova coluna 'country'
+dcountry <- dcountry %>%
+  rowwise() %>%
+  mutate(country = extractCountry(url))
+
+
+
+
+
+
+
+# Instale e carregue os pacotes necessários
+install.packages("rvest")
+library(rvest)
+library(dplyr)
+
+options(timeout = 120)
+
+
+# URL do filme no IMDb
+url <- "https://www.imdb.com/title/tt1375666/"
+
+# Função para extrair países de origem
+extractCountry <- function(url) {
+  # Lê a página HTML
+  page <- read_html(url)
+  
+  # Extrai os países de origem
+  countries <- page %>%
+    html_nodes(xpath = '//*[text()="Países de origem"]/following-sibling::div//a') %>%
+    html_text() %>%
+    paste(collapse = ", ")
+  
+  return(countries)
+}
+
+# Teste a função com a URL do filme
+country <- extractCountry(url)
+print(country)
+
+
+
+
+
+# Adicione a coluna 'country' ao dataframe 'dcountry'
+dcountry$country <- sapply(dcountry$URL, extractCountry)
+
 ```
 
 ### Tratamento e Limpeza de dados
@@ -278,10 +361,6 @@ meutema <- function(){
 ## Graficos
 
 ## Grafico 1
-
-
-
-
 
 ```{r, warning=FALSE, message=F}
 # Calcular a contagem para cada tipo (Type) em fdata
@@ -537,13 +616,14 @@ print(g5)
 ## GRAFICO 6
 ```{r warning=F, message=F}
 
-g6_data <- d_paises
-g6_data <- g6_data %>%
-  mutate(Pais = ifelse(Pais == "United States", "USA", Pais))
+g6_data <- dcountry
+# g6_data <- g6_data %>%
+#   mutate(Pais = ifelse(Pais == "United States", "USA", Pais))
+# 
+# g6_data <- g6_data %>%
+#   group_by(Pais) %>%
+#   summarise(freq = n())
 
-g6_data <- g6_data %>%
-  group_by(Pais) %>%
-  summarise(freq = n())
 
 
 WorldMap <- map_data("world") %>%
@@ -551,7 +631,7 @@ WorldMap <- map_data("world") %>%
   fortify()
 
 
-WorldData <- left_join(WorldMap, g6_data, by = c("region" = "Pais"))
+WorldData <- left_join(WorldMap, g6_data, by = c("region" = "country"))
 
 
 g6 <- ggplot(WorldData, aes(x = long, y = lat, group = group)) +  
