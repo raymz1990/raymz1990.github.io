@@ -70,5 +70,8 @@
   },
   "content/project/population-pyramid/index.qmd": {
     "index.html": "5e02e1bd"
+  },
+  "content/project/imdb-watchlist/index.qmd": {
+    "index.html": "ee1117c8"
   }
 }

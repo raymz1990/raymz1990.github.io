@@ -6,6 +6,7 @@ listing:
   contents: 
     - churn
     - population-pyramid
+    - imdb-watchlist
   type: grid
   grid-columns: 3
   categories: true

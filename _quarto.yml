@@ -18,13 +18,6 @@ website:
     logo: "static/logo.svg"
     title: false
     background: primary
-    tools:
-      - href: https://github.com/raymz1990
-        icon: github
-        target: _blank
-      - href: https://www.linkedin.com/in/raymundopilz/
-        icon: linkedin
-        target: _blank
     left:
       - href: content/experience/index.qmd
         text: Experience 
@@ -36,9 +29,19 @@ website:
       - href: en/index.qmd
         text: "{{< iconify emojione flag-for-united-states >}}"
   page-footer:
-    center: |
+    left: |
       <b>© 2024 Raymundo Eduardo Pilz</b>  <br>
       powered by [quarto](https://quarto.org)
+    right: 
+      - href: https://github.com/raymz1990
+        text: "{{< iconify fa6-brands github >}}"
+        target: _blank
+        rel: me
+      - href: https://www.linkedin.com/in/raymundopilz/
+        text: "{{< iconify entypo-social linkedin-with-circle >}}"
+        target: _blank
+        rel: me
+
   back-to-top-navigation: false
 
 format:

@@ -19,6 +19,7 @@
     "listing": "/content/project/index.html",
     "items": [
       "/content/project/churn/index.html",
+      "/content/project/imdb-watchlist/index.html",
       "/content/project/population-pyramid/index.html"
     ]
   },

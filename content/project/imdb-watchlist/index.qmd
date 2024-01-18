@@ -12,6 +12,12 @@ categories:
   - Dataviz
 ---
 
+O presente trabalho foi desenvolvido na matéria do 2º período (2023) da disciplina de CE303 – Visualização de Dados Aplicada, ministrada pelo professor Anderson Ara pela Universidade Federal do Paraná (UFPR).
+
+Incialmente, foi elaborado um relatório com o uso do PowerBI, disponível em:
+
+
+
 
 ## LAYOUT EM GGPLOT 
 
@@ -36,18 +42,17 @@ library(leaflet)
 ```
 
 ### Carregando datasets
-```{r}
+```{r warning=F, message=F}
 d_titulos <- fread("./dados/dTitleBasics.csv")
 d_tempo <- fread("./dados/dTitleRuntime.csv")
 
 str(d_titulos)
-
 str(d_tempo)
 ```
 
 
 ### Criando arquivos para puxar os dados referente aos países dos filmes utilizando webscrap
-```{r}
+```{r warning=F, message=F}
 # Importando arquivo base
 d_paises <- fread("./dados/dCountry.csv")
 
@@ -55,7 +60,7 @@ d_paises <- fread("./dados/dCountry.csv")
 dcountry <- select(d_paises, tconst)
 dcountry$url <- paste0("https://www.imdb.com/title/", dcountry$tconst, "/")
 
-# Defina o tempo limite global
+# Definindo o tempo limite global (conexão e tamanho do dataset podem interromper o carregamento dos dados)
 options(timeout = 120)
 
 # Criando a função 
@@ -68,168 +73,24 @@ extractCountry <- function(url) {
   return(countries)
 }
 
-
-#### 
-
-# Invoca a função salva e carregar os dados
+# Invocando a função e carregando os dados
 dcountry <- dcountry %>%
   rowwise() %>%
   mutate(country = extractCountry(url))
-
+# Separando os páises
 dcountry <- dcountry %>%
   mutate(country = strsplit(country, ",")) %>%
   unnest(country)
-
+# Agrupando as funções
 dcountry <- dcountry %>%
   group_by(country) %>%
   summarise(freq = n())
-
+# Gerando os códigos ISO dos países
 dcountry$iso3 <- countrycode(sourcevar = dcountry$country,
                              origin = "country.name",
                              destination = "iso3c")
 
-g6_data <- dcountry
-
-
-
-get_lat_long <- function(country_name) {
-  world <- map_data("world")
-  country_data <- world[world$region %in% country_name, c("region", "long", "lat")]
-  return(country_data)
-}
-
-
-
-# Obtendo coordenadas de latitude e longitude
-coordenadas <- lapply(dcountry$country, get_lat_long)
-coordenadas_df <- do.call(rbind, coordenadas)
-coordenadas_df$iso3 <- countrycode(sourcevar = coordenadas_df$region,
-                             origin = "country.name",
-                             destination = "iso3c")
-
-
-
-# Remove leading and trailing spaces from the joining column in both data frames
-coordenadas_df$iso3 <- str_trim(coordenadas_df$iso3)
-g6_data$iso3 <- str_trim(g6_data$iso3)
-
-# Perform the left join again
-g6_data <- left_join(coordenadas_df, g6_data, by = "iso3")
-head(g6_data)
-
-unique(g6_data$freq)
-g6_data <- select()
-
-
-
-
-#----
-  # Carregue as bibliotecas
-
-
-# Suponha que 'dcountry' seja seu dataframe com a coluna 'Country' contendo nomes dos países
-
-# Converta os nomes dos países em códigos ISO de países
-dcountry$iso3 <- countrycode(sourcevar = dcountry$country, origin = "country.name", destination = "iso3c")
-
-# Crie um mapa básico
-mapa <- leaflet(data = g6_data) %>%
-  addTiles() %>% # Adicione o fundo do mapa
-  addCircleMarkers(radius = ~10, # Tamanho das bolhas
-                   color = "blue", 
-                   fillOpacity = 0.7, 
-                   popup = ~paste(country, "<br>Value:", freq)) # Adicione as bolhas com informações do país
-
-# Visualize o mapa
-mapa
-
-
-
-
-
-
-
-str(d_paises)
-```
-
-
-
-```{r}
-# Importando Bibliotecas
-library(rvest)
-library(dplyr)
-
-# Importando arquivo base
-d_paises <- fread("./dados/dCountry.csv")
-
-options(timeout = 120)
-
-
-dcountry <- select(d_paises, tconst)
-dcountry$url <- paste0("https://www.imdb.com/title/", dcountry$tconst, "/")
-
-
-# Defina uma função para extrair dados do site
-extractCountry <- function(url) {
-  # Lê a página HTML
-  page <- read_html(url)
-  
-  # Encontre os elementos <a> dentro da estrutura especificada
-  countries <- page %>%
-    html_nodes(".ipc-metadata-list-item__list-content-item--link[role='button']") %>%
-    html_text() %>%
-    paste(collapse = ", ")  # Concatena os países separados por vírgulas
-  
-  return(countries)
-}
-
-# Aplica a função à coluna 'url' e armazena o resultado na nova coluna 'country'
-dcountry <- dcountry %>%
-  rowwise() %>%
-  mutate(country = extractCountry(url))
-
-
-
-
-
-
-
-# Instale e carregue os pacotes necessários
-install.packages("rvest")
-library(rvest)
-library(dplyr)
-
-options(timeout = 120)
-
-
-# URL do filme no IMDb
-url <- "https://www.imdb.com/title/tt1375666/"
-
-# Função para extrair países de origem
-extractCountry <- function(url) {
-  # Lê a página HTML
-  page <- read_html(url)
-  
-  # Extrai os países de origem
-  countries <- page %>%
-    html_nodes(xpath = '//*[text()="Países de origem"]/following-sibling::div//a') %>%
-    html_text() %>%
-    paste(collapse = ", ")
-  
-  return(countries)
-}
-
-# Teste a função com a URL do filme
-country <- extractCountry(url)
-print(country)
-
-
-
-
-
-# Adicione a coluna 'country' ao dataframe 'dcountry'
-dcountry$country <- sapply(dcountry$URL, extractCountry)
-
+str(dcountry)
 ```
 
 ### Tratamento e Limpeza de dados
@@ -240,7 +101,7 @@ Para otimização do trabalho será criado uma tabela principal com todas as var
   - Vamos trabalhar com o tempo em horas, assim, é necessários transformar minutos em horas.
   
 ```{r warning=F, message=FALSE}
-# Criar nova tabela a partir de d_titulos e realizando a classificação 
+# Criando nova tabela a partir de d_titulos e realizando a classificação 
 fdata <- d_titulos %>%
   select(tconst, titleType, startYear, genres) %>%
   mutate(Type = case_when(
@@ -249,10 +110,10 @@ fdata <- d_titulos %>%
     TRUE ~ "Others"
   ))
 
-# Filtrar os resultados para excluir aqueles que são classificados como "Others"
+# Filtrando os resultados para excluir aqueles que são classificados como "Others"
 fdata <- filter(fdata, Type != "Others")
 
-# Unir as tabelas d_data e d_tempo. tconst como chave primaria
+# Unindo as tabelas d_data e d_tempo. tconst como chave primaria
 fdata <- left_join(fdata, d_tempo, by = "tconst")
 
 # Criar coluna horas e eliminar colunas desnecessarias
@@ -261,10 +122,9 @@ fdata <- fdata %>%
   select(-titleType, -runtimeMinutes)  
 
 fdata
-
 ```
 
-### Criando gráficos com temas específicos
+### Criando temas específicos
 ```{r warning=F, message=F}
 # Temas padrão
 cor_titulo <- "#000000"
@@ -318,49 +178,12 @@ meutema <- function(){
     )
 }
 
-#GRÁFICO 1
-# tabela <- data.frame(VALORES=sort(table(x)))
-# 
-# g1 <- tabela %>% ggplot(aes(x=VALORES.x,y=VALORES.Freq))+
-#   geom_bar(stat='identity',fill=cor_filmes)+
-#   coord_flip()+
-#   xlab("Categorias")+
-#   ylab("Frequência")+
-#   ggtitle("Gráfico 1")+
-#   meutema()
-# 
-# #GRÁFICO 2
-# g2 <- dados %>% ggplot(aes(x=y1,y=y2))+
-#   geom_point(size=5,colour=cor_filmes)+
-#   ggtitle("Gráfico 2")+
-#   xlab("Variável 1")+
-#   ylab("Variável 2")+
-#   meutema()
-
-# #GRÁFICO 3
-# g3 <- dados %>% ggplot(aes(x=y3))+
-#   geom_density(fill=cor_filmes)+
-#   facet_grid(facets=.~grp)+
-#   coord_flip()+
-#   ggtitle("Gráfico 3")+
-#   ylab("Densidade")+
-#   xlab("Variável 3")+
-#   meutema()+
-#   theme(axis.text.x = element_text(size=10, family = "Rockwell",colour=cor_series))
-# 
-# #GRÁFICO 4
-# g4 <- dados %>% ggplot(aes(x=x,y=y2))+
-#   geom_boxplot(fill=cor_filmes,colour=cor_series)+
-#   ggtitle("Gráfico 4")+
-#   ylab("Variável 2")+
-#   xlab("")+
-#   meutema()
 
 ```
 
 ## Graficos
 
-## Grafico 1
+### GRAFICO 1 - FILMES VS SÉRIES DE TV
 
 ```{r, warning=FALSE, message=F}
 # Calcular a contagem para cada tipo (Type) em fdata
@@ -428,7 +251,7 @@ print(g1)
 
 ```
 
-## GRAFICO 2
+## GRAFICO 2 - HORAS ASSISTIDAS
 ```{r, warning=FALSE, message=F}
 # Criando dataset
 g2_data <- fdata %>%
@@ -495,7 +318,7 @@ print(g2)
 
 ```
 
-## GRAFICO 3
+## GRAFICO 3 - HORAS DE FILMES E SÉRIES DE TV ASSISTIDOS POR DÉCADA
 ```{r, warning=FALSE, message=F}
 # Criando dataset
 g3_data <- select(fdata, startYear, Type, Hours) %>%
@@ -507,15 +330,11 @@ g3_data <- g3_data %>%
   group_by(Year, Type) %>%
   summarise(Hours = sum(Hours))
 
-# Criar o dataframe e incluir as cores
-#g3_data$Freq <- (g3_data$Hours / horas_assistidas)
-
 # Mesclar com o dataframe de cores (dcolor)
 g3_data <- left_join(g3_data, dcolor, by = "Type")
 
 # g3_data <- g3_data %>% 
 #   arrange(desc(Type))
-
 
 # Criar o gráfico
 g3 <- ggplot(
@@ -555,7 +374,7 @@ print(g3)
 
 ```
 
-## GRAFICO 4
+## GRAFICO 4 - FILMES ASSISTIDOS POR GÊNERO
 ```{r, warning=FALSE, message=F}
 # Criando dataset
 g4_data <- fdata %>%
@@ -580,11 +399,11 @@ g4 <- g4_data %>%
     plot.title = element_text(hjust = 0.5, size = 20, face = "bold")
   )
 
-# Print the word cloud plot
+# Exibir o gráfico
 print(g4)
 ```
 
-## GRAFICO 5
+## GRAFICO 5 - SÉRIES ASSISTIDAS POR GÊNERO
 ```{r, warning=FALSE, message=F}
 # Criando dataset
 g5_data <- fdata %>%
@@ -609,22 +428,14 @@ g5 <- g5_data %>%
     plot.title = element_text(hjust = 0.5, size = 20, face = "bold")
   )
 
-# Print the word cloud plot
+# Exibir o gráfico
 print(g5)
 ```
 
-## GRAFICO 6
+## GRAFICO 6 - FILMES E SÉRIES DE TV POR PAÍS DE ORIGEM
 ```{r warning=F, message=F}
 
 g6_data <- dcountry
-# g6_data <- g6_data %>%
-#   mutate(Pais = ifelse(Pais == "United States", "USA", Pais))
-# 
-# g6_data <- g6_data %>%
-#   group_by(Pais) %>%
-#   summarise(freq = n())
-
-
 
 WorldMap <- map_data("world") %>%
   filter(region != "Antarctica") %>%
@@ -648,6 +459,9 @@ g6 <- ggplot(WorldData, aes(x = long, y = lat, group = group)) +
   labs(
     size = "Frequência"
   )
+
+# Exibir o gráfico
+g6
 
 ```
 
@@ -720,11 +534,9 @@ dev.off()
 
 ### Resultado Final
 
-```{r echo=FALSE, out.width="70%", fig.align='center'}
+```{r echo=FALSE, out.width="70%", fig.align='center', warning=FALSE}
 knitr::include_graphics("./Desafio3.png")
 ```
-
-
 
 
 

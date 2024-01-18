@@ -12,7 +12,8 @@
     ],
     "content\\project\\index.qmd": [
       "churn",
-      "population-pyramid"
+      "population-pyramid",
+      "imdb-watchlist"
     ],
     "english_website\\content\\project\\index.qmd": [
       "churn"
