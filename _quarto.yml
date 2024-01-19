@@ -8,6 +8,7 @@ website:
   google-analytics: "G-NYKKWQWQLX"
   title: "Raymundo Eduardo Pilz"
   favicon: "static/favicon.svg"
+  page-navigation: true
   search: false
   open-graph: 
     site-name: raymundo's website
@@ -28,10 +29,10 @@ website:
     right:
       - href: en/index.qmd
         text: "{{< iconify emojione flag-for-united-states >}}"
+  
   page-footer:
     left: |
-      <b>© 2024 Raymundo Eduardo Pilz</b>  <br>
-      powered by [quarto](https://quarto.org)
+      <b> © 2024 Raymundo Eduardo Pilz</b> | powered by [Quarto](https://quarto.org)
     right: 
       - href: https://github.com/raymz1990
         text: "{{< iconify fa6-brands github >}}"
