@@ -127,9 +127,7 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
  <span class="menu-text"><iconify-icon inline="" icon="emojione:flag-for-united-states"></iconify-icon></span></a>
   </li>  
 </ul>
-<div class="quarto-navbar-tools tools-wide">
-    <a href="https://github.com/raymz1990" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-    <a href="https://www.linkedin.com/in/raymundopilz/" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+<div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
           </div> <!-- /navcollapse -->
@@ -144,7 +142,7 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 
 <p class="date">2023-10-19</p>
 </header><p>O presente trabalho foi desenvolvido na matéria do 2º período (2023) da disciplina de CE303 – Visualização de Dados Aplicada, ministrada pelo professor Anderson Ara pela Universidade Federal do Paraná (UFPR).</p>
-<p>Incialmente, foi elaborado um relatório com o uso do PowerBI, disponível em:</p>
+<p>Incialmente, foi elaborado um relatório com o uso do PowerBI, disponível em: <a href="https://app.powerbi.com/view?r=eyJrIjoiOGVlMzIzMjktOGZjNi00YWZkLWE1OTMtNGI3NDM3NmI1MjQwIiwidCI6ImMzN2IzN2EzLWU5ZTItNDJmOS1iYzY3LTRiOWI3MzhlMWRmMCJ9">Visualização Dashboard PopcornTime</a></p>
 <section id="layout-em-ggplot" class="level2"><h2 class="anchored" data-anchor-id="layout-em-ggplot">LAYOUT EM GGPLOT</h2>
 <section id="carregando-bibliotecas" class="level3"><h3 class="anchored" data-anchor-id="carregando-bibliotecas">Carregando Bibliotecas</h3>
 <div class="cell">
@@ -204,19 +202,33 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 <span></span>
 <span><span class="co"># Criando a função </span></span>
 <span><span class="va">extractCountry</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">url</span><span class="op">)</span> <span class="op">{</span></span>
-<span>  <span class="va">page</span> <span class="op">&lt;-</span> <span class="fu"><a href="http://xml2.r-lib.org/reference/read_xml.html">read_html</a></span><span class="op">(</span><span class="va">url</span><span class="op">)</span></span>
-<span>  <span class="va">countries</span> <span class="op">&lt;-</span> <span class="va">page</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
-<span>    <span class="fu"><a href="https://rvest.tidyverse.org/reference/rename.html">html_nodes</a></span><span class="op">(</span><span class="st">".ipc-metadata-list__item[data-testid='title-details-origin'] .ipc-inline-list__item a.ipc-metadata-list-item__list-content-item--link"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
-<span>    <span class="fu"><a href="https://rvest.tidyverse.org/reference/html_text.html">html_text</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
-<span>    <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span><span class="op">(</span>collapse <span class="op">=</span> <span class="st">","</span><span class="op">)</span></span>
-<span>  <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="va">countries</span><span class="op">)</span></span>
+<span>  <span class="kw"><a href="https://rdrr.io/r/base/conditions.html">tryCatch</a></span><span class="op">(</span><span class="op">{</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/base/Sys.sleep.html">Sys.sleep</a></span><span class="op">(</span><span class="fl">5</span><span class="op">)</span>  <span class="co"># Aguarde 5 segundos entre as solicitações</span></span>
+<span>    <span class="va">page</span> <span class="op">&lt;-</span> <span class="fu"><a href="http://xml2.r-lib.org/reference/read_xml.html">read_html</a></span><span class="op">(</span><span class="va">url</span><span class="op">)</span></span>
+<span>    <span class="va">countries</span> <span class="op">&lt;-</span> <span class="va">page</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>      <span class="fu"><a href="https://rvest.tidyverse.org/reference/rename.html">html_nodes</a></span><span class="op">(</span><span class="st">".ipc-metadata-list__item[data-testid='title-details-origin'] .ipc-inline-list__item a.ipc-metadata-list-item__list-content-item--link"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>      <span class="fu"><a href="https://rvest.tidyverse.org/reference/html_text.html">html_text</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>      <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span><span class="op">(</span>collapse <span class="op">=</span> <span class="st">","</span><span class="op">)</span></span>
+<span>    <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="va">countries</span><span class="op">)</span></span>
+<span>  <span class="op">}</span>, error <span class="op">=</span> <span class="kw">function</span><span class="op">(</span><span class="va">e</span><span class="op">)</span> <span class="op">{</span></span>
+<span>    <span class="co"># Lidar com o erro, retornar um valor padrão ou fazer algo mais</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/base/cat.html">cat</a></span><span class="op">(</span><span class="st">"Erro na requisição:"</span>, <span class="fu"><a href="https://rdrr.io/r/base/conditions.html">conditionMessage</a></span><span class="op">(</span><span class="va">e</span><span class="op">)</span>, <span class="st">"\n"</span><span class="op">)</span></span>
+<span>    <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="cn">NA</span><span class="op">)</span></span>
+<span>  <span class="op">}</span><span class="op">)</span></span>
 <span><span class="op">}</span></span>
+<span></span>
 <span></span>
 <span><span class="co"># Invocando a função e carregando os dados</span></span>
 <span><span class="va">dcountry</span> <span class="op">&lt;-</span> <span class="va">dcountry</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/rowwise.html">rowwise</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>country <span class="op">=</span> <span class="fu">extractCountry</span><span class="op">(</span><span class="va">url</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co"># Separando os páises</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>country <span class="op">=</span> <span class="fu">extractCountry</span><span class="op">(</span><span class="va">url</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details><div class="cell-output cell-output-stdout">
+<pre><code>Erro na requisição: HTTP error 504. 
+Erro na requisição: HTTP error 504. 
+Erro na requisição: HTTP error 504. 
+Erro na requisição: HTTP error 504. </code></pre>
+</div>
+<details><summary>Code</summary><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Separando os páises</span></span>
 <span><span class="va">dcountry</span> <span class="op">&lt;-</span> <span class="va">dcountry</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>country <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/strsplit.html">strsplit</a></span><span class="op">(</span><span class="va">country</span>, <span class="st">","</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://tidyr.tidyverse.org/reference/unnest.html">unnest</a></span><span class="op">(</span><span class="va">country</span><span class="op">)</span></span>
@@ -231,10 +243,10 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">dcountry</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output cell-output-stdout">
-<pre><code>tibble [39 × 3] (S3: tbl_df/tbl/data.frame)
- $ country: chr [1:39] "Argentina" "Australia" "Austria" "Belgium" ...
- $ freq   : int [1:39] 1 9 1 3 4 15 7 1 2 6 ...
- $ iso3   : chr [1:39] "ARG" "AUS" "AUT" "BEL" ...</code></pre>
+<pre><code>tibble [40 × 3] (S3: tbl_df/tbl/data.frame)
+ $ country: chr [1:40] "Argentina" "Australia" "Austria" "Belgium" ...
+ $ freq   : int [1:40] 1 9 1 3 4 15 7 1 2 6 ...
+ $ iso3   : chr [1:40] "ARG" "AUS" "AUT" "BEL" ...</code></pre>
 </div>
 </div>
 </section><section id="tratamento-e-limpeza-de-dados" class="level3"><h3 class="anchored" data-anchor-id="tratamento-e-limpeza-de-dados">Tratamento e Limpeza de dados</h3>
@@ -248,7 +260,7 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 </li>
 </ul>
 <div class="cell">
-<details><summary>Code</summary><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Criando nova tabela a partir de d_titulos e realizando a classificação </span></span>
+<details><summary>Code</summary><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Criando nova tabela a partir de d_titulos e realizando a classificação </span></span>
 <span><span class="va">fdata</span> <span class="op">&lt;-</span> <span class="va">d_titulos</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">tconst</span>, <span class="va">titleType</span>, <span class="va">startYear</span>, <span class="va">genres</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>Type <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/case_when.html">case_when</a></span><span class="op">(</span></span>
@@ -286,7 +298,7 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 </div>
 </section><section id="criando-temas-específicos" class="level3"><h3 class="anchored" data-anchor-id="criando-temas-específicos">Criando temas específicos</h3>
 <div class="cell">
-<details><summary>Code</summary><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Temas padrão</span></span>
+<details><summary>Code</summary><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Temas padrão</span></span>
 <span><span class="va">cor_titulo</span> <span class="op">&lt;-</span> <span class="st">"#000000"</span></span>
 <span><span class="va">fonte_titulo</span> <span class="op">&lt;-</span> <span class="st">"Rockwell"</span></span>
 <span><span class="va">tamanho_titulo</span> <span class="op">&lt;-</span> <span class="fl">30</span></span>
@@ -342,7 +354,7 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 </section></section><section id="graficos" class="level2"><h2 class="anchored" data-anchor-id="graficos">Graficos</h2>
 <section id="grafico-1---filmes-vs-séries-de-tv" class="level3"><h3 class="anchored" data-anchor-id="grafico-1---filmes-vs-séries-de-tv">GRAFICO 1 - FILMES VS SÉRIES DE TV</h3>
 <div class="cell">
-<details><summary>Code</summary><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Calcular a contagem para cada tipo (Type) em fdata</span></span>
+<details><summary>Code</summary><div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Calcular a contagem para cada tipo (Type) em fdata</span></span>
 <span><span class="va">g1_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">fdata</span><span class="op">$</span><span class="va">Type</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># Total de assistidos</span></span>
@@ -410,7 +422,7 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 </div>
 </section></section><section id="grafico-2---horas-assistidas" class="level2"><h2 class="anchored" data-anchor-id="grafico-2---horas-assistidas">GRAFICO 2 - HORAS ASSISTIDAS</h2>
 <div class="cell">
-<details><summary>Code</summary><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Criando dataset</span></span>
+<details><summary>Code</summary><div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Criando dataset</span></span>
 <span><span class="va">g2_data</span> <span class="op">&lt;-</span> <span class="va">fdata</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">Hours</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span>  <span class="co"># Remover entradas com NA em Hours</span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">Type</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
@@ -422,7 +434,7 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 </details><div class="cell-output cell-output-stdout">
 <pre><code>[1] 2271</code></pre>
 </div>
-<details><summary>Code</summary><div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Criar o dataframe e incluir as cores</span></span>
+<details><summary>Code</summary><div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Criar o dataframe e incluir as cores</span></span>
 <span><span class="va">g2_data</span><span class="op">$</span><span class="va">Freq</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="va">g2_data</span><span class="op">$</span><span class="va">Hours</span> <span class="op">/</span> <span class="va">horas_assistidas</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># Mesclar com o dataframe de cores (dcolor)</span></span>
@@ -480,7 +492,7 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 </div>
 </section><section id="grafico-3---horas-de-filmes-e-séries-de-tv-assistidos-por-década" class="level2"><h2 class="anchored" data-anchor-id="grafico-3---horas-de-filmes-e-séries-de-tv-assistidos-por-década">GRAFICO 3 - HORAS DE FILMES E SÉRIES DE TV ASSISTIDOS POR DÉCADA</h2>
 <div class="cell">
-<details><summary>Code</summary><div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Criando dataset</span></span>
+<details><summary>Code</summary><div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Criando dataset</span></span>
 <span><span class="va">g3_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">fdata</span>, <span class="va">startYear</span>, <span class="va">Type</span>, <span class="va">Hours</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">Hours</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="va">g3_data</span><span class="op">$</span><span class="va">Year</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/character.html">as.character</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Round.html">floor</a></span><span class="op">(</span><span class="va">g3_data</span><span class="op">$</span><span class="va">startYear</span> <span class="op">/</span> <span class="fl">10</span><span class="op">)</span> <span class="op">*</span> <span class="fl">10</span><span class="op">)</span></span>
@@ -537,7 +549,7 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 </div>
 </section><section id="grafico-4---filmes-assistidos-por-gênero" class="level2"><h2 class="anchored" data-anchor-id="grafico-4---filmes-assistidos-por-gênero">GRAFICO 4 - FILMES ASSISTIDOS POR GÊNERO</h2>
 <div class="cell">
-<details><summary>Code</summary><div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Criando dataset</span></span>
+<details><summary>Code</summary><div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Criando dataset</span></span>
 <span><span class="va">g4_data</span> <span class="op">&lt;-</span> <span class="va">fdata</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>genres <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/strsplit.html">strsplit</a></span><span class="op">(</span><span class="va">genres</span>, <span class="st">","</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://tidyr.tidyverse.org/reference/unnest.html">unnest</a></span><span class="op">(</span><span class="va">genres</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
@@ -568,7 +580,7 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 </div>
 </section><section id="grafico-5---séries-assistidas-por-gênero" class="level2"><h2 class="anchored" data-anchor-id="grafico-5---séries-assistidas-por-gênero">GRAFICO 5 - SÉRIES ASSISTIDAS POR GÊNERO</h2>
 <div class="cell">
-<details><summary>Code</summary><div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Criando dataset</span></span>
+<details><summary>Code</summary><div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Criando dataset</span></span>
 <span><span class="va">g5_data</span> <span class="op">&lt;-</span> <span class="va">fdata</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>genres <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/strsplit.html">strsplit</a></span><span class="op">(</span><span class="va">genres</span>, <span class="st">","</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://tidyr.tidyverse.org/reference/unnest.html">unnest</a></span><span class="op">(</span><span class="va">genres</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
@@ -599,7 +611,7 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 </div>
 </section><section id="grafico-6---filmes-e-séries-de-tv-por-país-de-origem" class="level2"><h2 class="anchored" data-anchor-id="grafico-6---filmes-e-séries-de-tv-por-país-de-origem">GRAFICO 6 - FILMES E SÉRIES DE TV POR PAÍS DE ORIGEM</h2>
 <div class="cell">
-<details><summary>Code</summary><div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">g6_data</span> <span class="op">&lt;-</span> <span class="va">dcountry</span></span>
+<details><summary>Code</summary><div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">g6_data</span> <span class="op">&lt;-</span> <span class="va">dcountry</span></span>
 <span></span>
 <span><span class="va">WorldMap</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/map_data.html">map_data</a></span><span class="op">(</span><span class="st">"world"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">region</span> <span class="op">!=</span> <span class="st">"Antarctica"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
@@ -632,7 +644,7 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 </div>
 </section><section id="criando-layout-de-painel-final" class="level2"><h2 class="anchored" data-anchor-id="criando-layout-de-painel-final">Criando layout de painel final</h2>
 <div class="cell">
-<details><summary>Code</summary><div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">#IMPORTANDO IMAGENS</span></span>
+<details><summary>Code</summary><div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">#IMPORTANDO IMAGENS</span></span>
 <span><span class="va">imag1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/png/man/readPNG.html">readPNG</a></span><span class="op">(</span><span class="st">"./imagens/PaginaA4.png"</span><span class="op">)</span></span>
 <span><span class="va">im1</span><span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/grid/grid.raster.html">rasterGrob</a></span><span class="op">(</span><span class="va">imag1</span>, width <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/grid/unit.html">unit</a></span><span class="op">(</span><span class="fl">29.7</span>,<span class="st">"cm"</span><span class="op">)</span>, height <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/grid/unit.html">unit</a></span><span class="op">(</span><span class="fl">42.0</span>,<span class="st">"cm"</span><span class="op">)</span><span class="op">)</span></span>
 <span></span>
@@ -689,7 +701,7 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 </details><div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
 </div>
-<details><summary>Code</summary><div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Salve o gráfico final</span></span>
+<details><summary>Code</summary><div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Salve o gráfico final</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/grDevices/dev.html">dev.off</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output cell-output-stdout">
 <pre><code>png 
@@ -1071,13 +1083,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center"><b>© 2024 Raymundo Eduardo Pilz</b> <br> powered by <a href="https://quarto.org">quarto</a></div>
-    <div class="nav-footer-right">
+    <div class="nav-footer-left"><b> © 2024 Raymundo Eduardo Pilz</b> | powered by <a href="https://quarto.org">Quarto</a></div>   
+    <div class="nav-footer-center">
       &nbsp;
     </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+<li class="nav-item">
+    <a class="nav-link" href="https://github.com/raymz1990"><iconify-icon inline="" icon="fa6-brands:github"></iconify-icon></a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.linkedin.com/in/raymundopilz/"><iconify-icon inline="" icon="entypo-social:linkedin-with-circle"></iconify-icon></a>
+  </li>  
+</ul>
+</div>
   </div>
 </footer>
 

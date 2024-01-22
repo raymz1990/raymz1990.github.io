@@ -29,10 +29,16 @@
     ],
     "en\\content\\project\\index.qmd": [
       "churn",
-      "en-churn"
+      "en-churn",
+      "population-pyramid",
+      "imdb-watchlist",
+      "german-credit",
+      "curriculo-bi"
     ],
     "en\\index.qmd": [
-      "project/churn"
+      "project/churn",
+      "content/project/churn",
+      "content/project/german-credit"
     ]
   }
 }
