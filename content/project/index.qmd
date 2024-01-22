@@ -7,6 +7,8 @@ listing:
     - churn
     - population-pyramid
     - imdb-watchlist
+    - german-credit
+    - curriculo-bi
   type: grid
   grid-columns: 3
   categories: true

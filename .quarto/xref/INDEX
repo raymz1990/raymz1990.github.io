@@ -73,5 +73,17 @@
   },
   "content/project/imdb-watchlist/index.qmd": {
     "index.html": "ee1117c8"
+  },
+  "content/cv/index.qmd": {
+    "index.html": "5216c60a"
+  },
+  "content/project/german_credit/index.md": {
+    "index.html": "8bb5591e"
+  },
+  "content/project/german-credit/index.md": {
+    "index.html": "6da908ce"
+  },
+  "content/project/curriculo-bi/index.md": {
+    "index.html": "cceb4ac4"
   }
 }

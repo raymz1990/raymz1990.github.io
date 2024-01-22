@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://raymz1990.github.io/content/education/index.html</loc>
-    <lastmod>2024-01-14T14:52:52.472Z</lastmod>
+    <lastmod>2024-01-21T23:06:23.893Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/index.html</loc>
-    <lastmod>2024-01-19T02:57:56.833Z</lastmod>
+    <lastmod>2024-01-22T03:41:34.350Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/content/experience/index.html</loc>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://raymz1990.github.io/content/project/index.html</loc>
-    <lastmod>2024-01-18T15:06:07.428Z</lastmod>
+    <lastmod>2024-01-22T03:41:10.286Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/content/project/churn/index.html</loc>
@@ -31,5 +31,17 @@
   <url>
     <loc>https://raymz1990.github.io/content/project/imdb-watchlist/index.html</loc>
     <lastmod>2024-01-18T15:06:37.887Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raymz1990.github.io/content/cv/index.html</loc>
+    <lastmod>2024-01-21T23:00:25.931Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raymz1990.github.io/content/project/german_credit/index.html</loc>
+    <lastmod>2024-01-22T02:43:31.176Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raymz1990.github.io/content/project/curriculo-bi/index.html</loc>
+    <lastmod>2024-01-22T03:40:20.592Z</lastmod>
   </url>
 </urlset>

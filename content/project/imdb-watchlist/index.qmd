@@ -15,7 +15,7 @@ categories:
 O presente trabalho foi desenvolvido na matéria do 2º período (2023) da disciplina de CE303 – Visualização de Dados Aplicada, ministrada pelo professor Anderson Ara pela Universidade Federal do Paraná (UFPR).
 
 Incialmente, foi elaborado um relatório com o uso do PowerBI, disponível em:
-
+[Visualização Dashboard PopcornTime](https://app.powerbi.com/view?r=eyJrIjoiOGVlMzIzMjktOGZjNi00YWZkLWE1OTMtNGI3NDM3NmI1MjQwIiwidCI6ImMzN2IzN2EzLWU5ZTItNDJmOS1iYzY3LTRiOWI3MzhlMWRmMCJ9)
 
 
 

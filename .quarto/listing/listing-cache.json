@@ -5,7 +5,8 @@
       "publications/multiplexity",
       "project/churn",
       "content/project/churn",
-      "./content/project/churn"
+      "./content/project/churn",
+      "content/project/german-credit"
     ],
     "project\\index.qmd": [
       "churn"
@@ -13,7 +14,9 @@
     "content\\project\\index.qmd": [
       "churn",
       "population-pyramid",
-      "imdb-watchlist"
+      "imdb-watchlist",
+      "german-credit",
+      "curriculo-bi"
     ],
     "english_website\\content\\project\\index.qmd": [
       "churn"

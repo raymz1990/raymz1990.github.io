@@ -186,53 +186,72 @@
   }
 
 /* footer */
-
-@media (max-width: 671px) {
   .nav-footer {
-    flex-direction: column;
-  }
-  .nav-footer > .nav-footer-left {
-    order: 2;
-  }
-  .nav-footer > .nav-footer-center {
-    order: 1;
-  }
-  .nav-footer > .nav-footer-right {
-    order: 3;
-  }
-}
+    align-items: center;  
+    flex-wrap: wrap;
+    border: 0 !important;
+    min-height: 3em;
+    font-size: 1.125rem;
 
-  .nav-footer {
-    align-items: center;
+  a {
+      color: #fdfbf7;
   }
 
-  .nav-footer .nav-footer-center {
-    margin: 0;
-    font-size: 1em;
+  .faux-block {
+      display: block;
+      padding-bottom: 0.4em;
+  }
+
+  /* In the default Quarto template, .nav-footer-center has position: absolute 
+  // turned on, which makes the div not be a flex item
+  // This changes that so that it *is* a flex item */
+  .nav-footer-center {
+      text-align: center;
+      position: inherit;
+      margin-top: 0;
+
+      @media (max-width: map-get($grid-breakpoints, md)) {
+          margin-top: 0.5em;
+          margin-bottom: 1.5em;
+      }
+  }
+
+  /* When the screen is medium or smaller, make each footer chunk be 100% width 
+   and centered; otherwise make them be 33% width and left/right/centerd */
+  .nav-footer-left,
+  .nav-footer-right,
+  .nav-footer-center {
+      text-align: center;
+      width: 100%;
+      min-height: 2em;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+      .nav-footer-left {
+          text-align: left;
+      }
+
+      .nav-footer-right {
+          text-align: right;
+      }
+
+      .nav-footer-left,
+      .nav-footer-right,
+      .nav-footer-center {
+          flex: 1 1 33%;
+      }
   }
 
   .nav-footer a:hover > i.bi, .nav-footer a:hover i.fa-brands, .nav-footer a:hover iconify-icon, .nav-footer a:hover i.fa-solid {
     color: #ebe9e1;
   }
 
-  .nav-footer a:hover i[class*='fa-square'], .nav-footer a:hover i[class*='fa-rocket'] {
-    background-color: #747474;
-    background-image: unset;
-  }
-
   .footer .fa-twitter {
     color: #1d9bf0;
   }
 
-  .footer .fa-rocket {
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(90deg,#f87900 0%,#fe4f45 51%,#e419ba 100%);
-    -webkit-text-fill-color: transparent;
-  }
-
   .footer .bi-linkedin {
-    color: #0a66c2;
+    color: #0a66c2 !important;
   }
   .footer .bi-github {
     color: #000000;
@@ -241,6 +260,7 @@
   .footer .bi-youtube {
     color: #ff0000;
   }
+}
 
   #quarto-back-to-top {
     bottom: 1.5em;

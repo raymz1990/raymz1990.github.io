@@ -39,6 +39,6 @@ function email(handle)
 end
 
 function cv(handle)
-  local output = '<a href="' .. pandoc.utils.stringify(handle) .. '"><i class="bi bi-download" ></i></a>'
+  local output = '<a href="' .. pandoc.utils.stringify(handle) .. '"><i class="bi bi-file-earmark-person-fill"></i></a>'
   return pandoc.RawBlock('html', output)
 end
