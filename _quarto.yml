@@ -29,6 +29,8 @@ website:
     right:
       - href: en/index.qmd
         text: "{{< iconify emojione flag-for-united-states >}}"
+      - href: en/index.qmd
+        text: "{{< iconify emojione flag-for-spain >}}"
   
   page-footer:
     left: |

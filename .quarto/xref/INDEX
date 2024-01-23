@@ -85,5 +85,20 @@
   },
   "content/project/curriculo-bi/index.md": {
     "index.html": "cceb4ac4"
+  },
+  "en/content/cv/index.qmd": {
+    "index.html": "dca46e71"
+  },
+  "en/content/project/curriculo-bi/index.md": {
+    "index.html": "7fbb51a3"
+  },
+  "en/content/project/german-credit/index.md": {
+    "index.html": "54235498"
+  },
+  "en/content/project/imdb-watchlist/index.qmd": {
+    "index.html": "97473b72"
+  },
+  "en/content/project/population-pyramid/index.qmd": {
+    "index.html": "389fa782"
   }
 }

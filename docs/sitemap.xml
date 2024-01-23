@@ -2,46 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://raymz1990.github.io/content/education/index.html</loc>
-    <lastmod>2024-01-21T23:06:23.893Z</lastmod>
+    <lastmod>2024-01-22T16:24:40.148Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/index.html</loc>
-    <lastmod>2024-01-22T23:26:58.471Z</lastmod>
+    <lastmod>2024-01-23T02:30:34.220Z</lastmod>
   </url>
   <url>
-    <loc>https://raymz1990.github.io/content/experience/index.html</loc>
-    <lastmod>2024-01-10T01:59:47.555Z</lastmod>
+    <loc>https://raymz1990.github.io/en/content/cv/index.html</loc>
+    <lastmod>2024-01-23T02:28:10.296Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raymz1990.github.io/en/content/education/index.html</loc>
+    <lastmod>2024-01-23T02:28:12.661Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raymz1990.github.io/en/content/experience/index.html</loc>
+    <lastmod>2024-01-23T02:28:14.656Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raymz1990.github.io/en/content/project/churn/index.html</loc>
+    <lastmod>2024-01-23T02:28:17.963Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raymz1990.github.io/en/content/project/curriculo-bi/index.html</loc>
+    <lastmod>2024-01-23T02:28:19.367Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raymz1990.github.io/en/content/project/german-credit/index.html</loc>
+    <lastmod>2024-01-23T02:28:20.612Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raymz1990.github.io/en/content/project/imdb-watchlist/index.html</loc>
+    <lastmod>2024-01-23T02:28:49.426Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raymz1990.github.io/en/content/project/index.html</loc>
+    <lastmod>2024-01-23T02:28:52.437Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raymz1990.github.io/en/content/project/population-pyramid/index.html</loc>
+    <lastmod>2024-01-23T02:28:58.568Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raymz1990.github.io/en/index.html</loc>
+    <lastmod>2024-01-23T02:29:03.424Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/content/project/index.html</loc>
-    <lastmod>2024-01-22T03:41:10.286Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raymz1990.github.io/content/project/churn/index.html</loc>
-    <lastmod>2024-01-18T13:54:37.676Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raymz1990.github.io/content/project/population-pyramid/index.html</loc>
-    <lastmod>2024-01-18T13:54:47.725Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raymz1990.github.io/content/project/population-pyramid/index - Copia.html</loc>
-    <lastmod>2024-01-14T15:17:29.637Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raymz1990.github.io/content/project/imdb-watchlist/index.html</loc>
-    <lastmod>2024-01-18T15:06:37.887Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raymz1990.github.io/content/cv/index.html</loc>
-    <lastmod>2024-01-21T23:00:25.931Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raymz1990.github.io/content/project/german_credit/index.html</loc>
-    <lastmod>2024-01-22T02:43:31.176Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raymz1990.github.io/content/project/curriculo-bi/index.html</loc>
-    <lastmod>2024-01-22T03:40:20.592Z</lastmod>
+    <lastmod>2024-01-23T02:33:33.197Z</lastmod>
   </url>
 </urlset>

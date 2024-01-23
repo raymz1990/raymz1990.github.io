@@ -61,22 +61,31 @@ dcountry <- select(d_paises, tconst)
 dcountry$url <- paste0("https://www.imdb.com/title/", dcountry$tconst, "/")
 
 # Definindo o tempo limite global (conexão e tamanho do dataset podem interromper o carregamento dos dados)
-options(timeout = 120)
+options(timeout = 30)
 
 # Criando a função 
 extractCountry <- function(url) {
-  page <- read_html(url)
-  countries <- page %>%
-    html_nodes(".ipc-metadata-list__item[data-testid='title-details-origin'] .ipc-inline-list__item a.ipc-metadata-list-item__list-content-item--link") %>%
-    html_text() %>%
-    paste(collapse = ",")
-  return(countries)
+  tryCatch({
+    Sys.sleep(5)  # Aguarde 5 segundos entre as solicitações
+    page <- read_html(url)
+    countries <- page %>%
+      html_nodes(".ipc-metadata-list__item[data-testid='title-details-origin'] .ipc-inline-list__item a.ipc-metadata-list-item__list-content-item--link") %>%
+      html_text() %>%
+      paste(collapse = ",")
+    return(countries)
+  }, error = function(e) {
+    # Lidar com o erro, retornar um valor padrão ou fazer algo mais
+    cat("Erro na requisição:", conditionMessage(e), "\n")
+    return(NA)
+  })
 }
+
 
 # Invocando a função e carregando os dados
 dcountry <- dcountry %>%
   rowwise() %>%
   mutate(country = extractCountry(url))
+
 # Separando os páises
 dcountry <- dcountry %>%
   mutate(country = strsplit(country, ",")) %>%

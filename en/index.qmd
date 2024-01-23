@@ -1,15 +1,17 @@
 ---
+#title: "Raymundo Eduardo Pilz"
 pagetitle: "Raymundo Eduardo Pilz"
 page-layout: custom
 toc: false
-css: index.css
+css: [content/home/css/index.css, assets/css/non-posts.css]
 shortcodes:
-  - socials.lua
+  - assets/lua/socials.lua
 listing: 
   - id: projects
     fields: [title,date]
     contents: 
-    - project/churn
+    - content/project/churn
+    - content/project/german-credit
     type: table
     table-hover: true
     date-format: medium
@@ -18,8 +20,25 @@ listing:
     sort-ui: false
     filter-ui: false
     sort: "date desc"
+  - id: projects-dark
+    fields: [title,date]
+    contents: 
+    - content/project/churn
+    type: table
+    table-hover: true
+    date-format: medium
+    image-align: left
+    max-items: 5
+    sort-ui: false
+    filter-ui: false
+    sort: "date desc"
+include-after-body:
+  text: |
+    <script src='/assets/js/styles.js'></script>
+    <script src='/assets/js/non-posts.js'></script>
 ---
 
+:::: light-mode
 
 :::: {.columns}
 
@@ -29,25 +48,33 @@ listing:
 ::: {.column .col-v-center width="70%"}
 
 ::: {.portrait}
-![](static/img/avatar.jpg){style="border-radius:50%"}
+![](static/img/avatar.jpg){.profile-pic}
 
 
 :::{.socials .text-center .col-v-center}
 {{< github raymz1990 >}}
 {{< linkedin raymundopilz >}}
 {{< email raymundopilz@gmail.com >}}
-{{< cv https://drive.google.com/file/d/1LXHgwnIf1F4sWGcTwDynQhMxWw_6s3Qd/view >}}
+{{< cv "content/cv/index.qmd">}}
 :::
 
 :::
 
+::: {.blank-space}
+:::
+
+<div style="text-align: center;">
 # Raymundo Eduardo Pilz
+<br>
+</div>
+
 ::: {.home-intro}
 I am a *Statistics* student at the Federal University of Paraná (**[UFPR](https://ufpr.br/)**). I am deeply passionate about developing statistical concepts and transforming raw data into valuable insights.
 
 With a bachelor's degree in *Accounting* from the University of West Santa Catarina (**[UNOESC](https://www.unoesc.edu.br/)**), I possess the skill to translate numbers into compelling narratives. Specializing in providing in-depth reports detailing financial and operational impacts, I offer users profound insights that drive decision-making.
 
 ```{r, error = FALSE, include=FALSE}
+#exemplo quando quiser incluir about (precisa excluir o bloco de codigo)
 #:::
 #:::{.about-link}
 #[MORE ABOUT ME](about/)
@@ -63,14 +90,15 @@ With a bachelor's degree in *Accounting* from the University of West Santa Catar
 
 ::::
 
+
 ::::{.columns}
-::: {.news-section}
+::: {.light-section}
 ::: {.column .col-v-center width="15%"}
 :::
 
 ::: {.column .col-v-center width="70%"}
 
-::: {.news-header}
+::: {.light-header}
 SKILLS
 :::
 :::
@@ -79,55 +107,40 @@ SKILLS
 
 ::::
 
-
 :::: {.columns}
-::: {.home-section}
+::: {.light-bg}
+
 ::: {.column .col-v-center width="15%"}
 :::
 
-::: {.column .col-v-center width="70%"}
+::: {.skills}
+::: {layout-ncol=3}
 
-::: {.logoskills}
-![](static/img/skills/powerbi.png){style="width: 100%; height: 200px;"}
-**Power BI**
+![Power BI](content/home/skills/img/microsoft-power-bi.svg)
+<br> <br>
+Power BI
 
-:::
+![R](content/home/skills/img/r.svg)
+<br> <br>
+R
 
-::: {.logoskills}
-![](static/img/skills/r.png){style="width: 100%; height: 200px;"}
+![Python](content/home/skills/img/python.svg)
+<br> <br>
+Python
 
-**R**
+![SQL](content/home/skills/img/postgresql.svg)
+<br> <br>
+SQL
 
-:::
+![Machine Learning](content/home/skills/img/machine-learning-model.svg)
+<br> <br>
+Machine Learning
 
-::: {.logoskills}
-![](static/img/skills/python.png){style="width: 100%; height: 200px;"}
-
-**Python**
-
-:::
-
-::: {.logoskills}
-![](static/img/skills/postgresql.png){style="width: 100%; height: 200px;"}
-
-**SQL**
-
-:::
-
-::: {.logoskills}
-![](static/img/skills/machinelearning.png){style="width: 100%; height: 200px;"}
-
-**Machine Learning**
+![Alteryx](content/home/skills/img/alteryx.svg)
+<br> <br>
+Alteryx
 
 :::
-
-::: {.logoskills}
-![](static/img/skills/alteryx.png){style="height: 200px"}
-
-**Alteryx**
-
-:::
-
 :::
 
 ::: {.column .col-v-center width="20%"}
@@ -136,21 +149,14 @@ SKILLS
 :::
 ::::
 
-
 ::::{.columns}
-::: {.column .col-v-center width="15%"}
-:::
-
-::::
-
-::::{.columns}
-::: {.news-section}
+::: {.light-section}
 ::: {.column .col-v-center width="15%"}
 :::
 
 ::: {.column .col-v-center width="70%"}
 
-::: {.news-header}
+::: {.light-header}
 PROJECTS
 :::
 :::
@@ -161,6 +167,7 @@ PROJECTS
 
 
 ::::{.columns}
+::: {.light-bg}
 
 ::: {.column .col-v-center width="15%"}
 :::
@@ -175,35 +182,150 @@ PROJECTS
 :::
 :::
 
+:::
+::::
+
 ::::
 
 
 
-::::{.columns}
-::: {.home-section}
+
+:::: dark-mode
+
+:::: {.columns}
+
 ::: {.column .col-v-center width="15%"}
 :::
 
 ::: {.column .col-v-center width="70%"}
 
+::: {.portrait}
+![](static/img/avatar.jpg){.profile-pic}
 
 
-### GitHub Activity
-<script
-  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-</script>
+:::{.socials .text-center .col-v-center}
+{{< github raymz1990 >}}
+{{< linkedin raymundopilz >}}
+{{< email raymundopilz@gmail.com >}}
+{{< cv "content/home/resume/CV_Raymundo.Pilz.pdf">}}
+:::
 
-<div class="l-body-outset">
-<a href="https://github.com/raymz1990">
-<div class="calendar">
-Loading my github calendar data.
+:::
+
+::: {.blank-space}
+:::
+
+<div style="text-align: center;">
+# Raymundo Eduardo Pilz
+<br>
 </div>
-</a>
-</div>
 
-<script>
-GitHubCalendar(".calendar", "raymz1990", { responsive: true });
-</script>
+::: {.home-intro}
+I am a *Statistics* student at the Federal University of Paraná (**[UFPR](https://ufpr.br/)**). I am deeply passionate about developing statistical concepts and transforming raw data into valuable insights.
+
+With a bachelor's degree in *Accounting* from the University of West Santa Catarina (**[UNOESC](https://www.unoesc.edu.br/)**), I possess the skill to translate numbers into compelling narratives. Specializing in providing in-depth reports detailing financial and operational impacts, I offer users profound insights that drive decision-making.
+
 :::
 :::
+
+::: {.column .col-v-center width="20%"}
+:::
+
+::::
+
+
+::::{.columns}
+::: {.dark-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.dark-header}
+SKILLS
+:::
+:::
+
+:::
+
+::::
+
+:::: {.columns}
+::: {.dark-bg}
+
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.skills}
+::: {layout-ncol=3}
+
+![Power BI](content/home/skills/img/microsoft-power-bi.svg)
+<br> <br>
+Power BI
+
+![R](content/home/skills/img/r.svg)
+<br> <br>
+R
+
+![Python](content/home/skills/img/python.svg)
+<br> <br>
+Python
+
+![SQL](content/home/skills/img/postgresql.svg)
+<br> <br>
+SQL
+
+![Machine Learning](content/home/skills/img/machine-learning-model.svg)
+<br> <br>
+Machine Learning
+
+![Alteryx](content/home/skills/img/alteryx.svg)
+<br> <br>
+Alteryx
+
+:::
+:::
+
+::: {.column .col-v-center width="20%"}
+:::
+
+:::
+::::
+
+::::{.columns}
+::: {.dark-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.light-header}
+PROJECTS
+:::
+:::
+
+:::
+
+::::
+
+
+::::{.columns}
+::: {.dark-bg}
+
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+:::{#projects-dark}
+:::
+
+::: {.all-link}
+[more projects](project/)
+:::
+:::
+
+:::
+::::
+
 ::::
