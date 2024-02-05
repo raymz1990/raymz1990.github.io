@@ -3,19 +3,11 @@
     "listing": "/index.html",
     "items": [
       "/content/project/churn/index.html",
-      "/en/content/project/churn/index.html",
-      "/content/project/german-credit/index.html",
-      "/en/content/project/german-credit/index.html"
+      "/content/project/german-credit/index.html"
     ]
   },
   {
-    "listing": "/project/index.html",
-    "items": [
-      "/project/churn/index.html"
-    ]
-  },
-  {
-    "listing": "/english_website/index.html",
+    "listing": "/content/cheat-sheet/index.html",
     "items": []
   },
   {
@@ -26,33 +18,6 @@
       "/content/project/imdb-watchlist/index.html",
       "/content/project/population-pyramid/index.html",
       "/content/project/curriculo-bi/index.html"
-    ]
-  },
-  {
-    "listing": "/english_website/content/project/index.html",
-    "items": [
-      "/english_website/content/project/churn/index.html"
-    ]
-  },
-  {
-    "listing": "/extensions.html",
-    "items": []
-  },
-  {
-    "listing": "/en/content/project/index.html",
-    "items": [
-      "/en/content/project/churn/index.html",
-      "/en/content/project/german-credit/index.html",
-      "/en/content/project/imdb-watchlist/index.html",
-      "/en/content/project/population-pyramid/index.html",
-      "/en/content/project/curriculo-bi/index.html"
-    ]
-  },
-  {
-    "listing": "/en/index.html",
-    "items": [
-      "/en/content/project/churn/index.html",
-      "/en/content/project/german-credit/index.html"
     ]
   }
 ]

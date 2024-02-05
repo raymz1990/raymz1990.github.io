@@ -1,9 +1,9 @@
 /*-- scss:defaults --*/
 $body-bg:                   #fdfbf7 !default;
-$body-color:                #4e734d !default;
-$link-color:                #425f41 !default;
+$body-color:                #CA2C35 !default;
+$link-color:                #B52730 !default;
 
-$navbar-bg:                 #4e734d !default;
+$navbar-bg:                 #B52730!default;
 $navbar-fg:                 #fdfbf7 !default;
 
 
@@ -36,18 +36,18 @@ $font-family-monospace: 'Montserrat';
 
 /*footer*/
 .nav-footer{
-  background-color:#4e734d;
+  background-color:#B52730;
   color: #fdfbf7;
 }
 
 /*link*/
 .listing-title{
-  color: #4e734d;
+  color: #B52730;
 }
 
 .listing-title:hover {
   text-decoration:underline;
-  color:#425f41;
+  color:#CA2C35;
 }
 
 .light-mode { display: block; }

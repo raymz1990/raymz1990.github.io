@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -48,8 +48,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-submit-button-title": "Submit"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NYKKWQWQLX"></script>
@@ -64,12 +63,11 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
 
 
 <link rel="stylesheet" href="../../assets/css/styles.css">
-<link rel="stylesheet" href="../../assets/css/academicons.css">
 <link rel="stylesheet" href="css/index.css">
 <meta property="og:title" content="Experience">
 <meta property="og:description" content="Raymundo Pilz’s website about work, graphics and statistics">
-<meta property="og:image" content="https://raymz1990.github.io/content/experience/static/img/avatar.svg">
-<meta property="og:site-name" content="raymundo's website">
+<meta property="og:site-name" content="Raymundo's website">
+<meta property="og:locale" content="pt-BR">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -89,6 +87,10 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link active" href="../../content/experience/index.html" rel="" target="" aria-current="page">
  <span class="menu-text">Experience</span></a>
   </li>  
@@ -100,16 +102,31 @@ gtag('config', 'G-NYKKWQWQLX', { 'anonymize_ip': true});
     <a class="nav-link" href="../../content/project/index.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../content/cheat-sheet/index.html" rel="" target="">
+ <span class="menu-text">Cheat-Sheet</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../content/resourse/resources.qmd" rel="" target="">
+ <span class="menu-text">Resources</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../en/index.html" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="emojione:flag-for-united-states"></iconify-icon></span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-english" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">English</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-english">    
+        <li>
+    <a class="dropdown-item" href="../../../es" rel="" target="">
+ <span class="dropdown-text">Spanish</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../en/index.html" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="emojione:flag-for-spain"></iconify-icon></span></a>
+        <li>
+    <a class="dropdown-item" href="../../../pt" rel="" target="">
+ <span class="dropdown-text">Português</span></a>
   </li>  
+    </ul>
+  </li>
 </ul>
             <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -738,26 +755,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp("https:\/\/raymz1990\.github\.io");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left"><b> © 2024 Raymundo Eduardo Pilz</b> | powered by <a href="https://quarto.org">Quarto</a></div>   
+    <div class="nav-footer-left"><b>© 2024 Raymundo Eduardo Pilz</b> | powered by <a href="https://quarto.org">quarto</a></div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>

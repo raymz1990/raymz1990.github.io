@@ -29,7 +29,7 @@ function mastodon(url)
 end
 
 function linkedin(handle)
-  local output = '<a href="https://linkedin.com/' .. pandoc.utils.stringify(handle) .. '"><i class="bi bi-linkedin" ></i></a>'
+  local output = '<a href="https://www.linkedin.com/in/' .. pandoc.utils.stringify(handle) .. '"><i class="bi bi-linkedin" ></i></a>'
   return pandoc.RawBlock('html', output)
 end
 

@@ -53,53 +53,56 @@ str(d_tempo)
 
 ### Criando arquivos para puxar os dados referente aos países dos filmes utilizando webscrap
 ```{r warning=F, message=F}
-# Importando arquivo base
-d_paises <- fread("./dados/dCountry.csv")
-
-# Criando nova tabela
-dcountry <- select(d_paises, tconst)
-dcountry$url <- paste0("https://www.imdb.com/title/", dcountry$tconst, "/")
-
-# Definindo o tempo limite global (conexão e tamanho do dataset podem interromper o carregamento dos dados)
-options(timeout = 30)
-
-# Criando a função 
-extractCountry <- function(url) {
-  tryCatch({
-    Sys.sleep(5)  # Aguarde 5 segundos entre as solicitações
-    page <- read_html(url)
-    countries <- page %>%
-      html_nodes(".ipc-metadata-list__item[data-testid='title-details-origin'] .ipc-inline-list__item a.ipc-metadata-list-item__list-content-item--link") %>%
-      html_text() %>%
-      paste(collapse = ",")
-    return(countries)
-  }, error = function(e) {
-    # Lidar com o erro, retornar um valor padrão ou fazer algo mais
-    cat("Erro na requisição:", conditionMessage(e), "\n")
-    return(NA)
-  })
-}
-
-
-# Invocando a função e carregando os dados
-dcountry <- dcountry %>%
-  rowwise() %>%
-  mutate(country = extractCountry(url))
-
-# Separando os páises
-dcountry <- dcountry %>%
-  mutate(country = strsplit(country, ",")) %>%
-  unnest(country)
-# Agrupando as funções
-dcountry <- dcountry %>%
-  group_by(country) %>%
-  summarise(freq = n())
-# Gerando os códigos ISO dos países
-dcountry$iso3 <- countrycode(sourcevar = dcountry$country,
-                             origin = "country.name",
-                             destination = "iso3c")
-
-str(dcountry)
+# # Importando arquivo base
+# d_paises <- fread("./dados/dCountry.csv")
+# 
+# # Criando nova tabela
+# dcountry <- select(d_paises, tconst)
+# dcountry$url <- paste0("https://www.imdb.com/title/", dcountry$tconst, "/")
+# 
+# # Definindo o tempo limite global (conexão e tamanho do dataset podem interromper o carregamento dos dados)
+# options(timeout = 12.0)
+# 
+# # Criando a função 
+# extractCountry <- function(url) {
+#   tryCatch({
+#     Sys.sleep(5)  # Aguarde 5 segundos entre as solicitações
+#     page <- read_html(url)
+#     countries <- page %>%
+#       html_nodes(".ipc-metadata-list__item[data-testid='title-details-origin'] .ipc-inline-list__item a.ipc-metadata-list-item__list-content-item--link") %>%
+#       html_text() %>%
+#       paste(collapse = ",")
+#     return(countries)
+#   }, error = function(e) {
+#     # Lidar com o erro, retornar um valor padrão ou fazer algo mais
+#     cat("Erro na requisição:", conditionMessage(e), "\n")
+#     return(NA)
+#   })
+# }
+# 
+# 
+# # Invocando a função e carregando os dados
+# dcountry <- dcountry %>%
+#   rowwise() %>%
+#   mutate(country = extractCountry(url))
+# 
+# # Separando os páises
+# dcountry <- dcountry %>%
+#   mutate(country = strsplit(country, ",")) %>%
+#   unnest(country)
+# # Agrupando as funções
+# dcountry <- dcountry %>%
+#   group_by(country) %>%
+#   summarise(freq = n())
+# # Gerando os códigos ISO dos países
+# dcountry$iso3 <- countrycode(sourcevar = dcountry$country,
+#                              origin = "country.name",
+#                              destination = "iso3c")
+# 
+# 
+# write.csv(dcountry, file = "./dados/dCountry.csv", row.names = FALSE, fileEncoding = "UTF-8")
+d_country <- fread("./dados/dCountry.csv")
+str(d_country)
 ```
 
 ### Tratamento e Limpeza de dados
@@ -444,7 +447,7 @@ print(g5)
 ## GRAFICO 6 - FILMES E SÉRIES DE TV POR PAÍS DE ORIGEM
 ```{r warning=F, message=F}
 
-g6_data <- dcountry
+g6_data <- d_country
 
 WorldMap <- map_data("world") %>%
   filter(region != "Antarctica") %>%

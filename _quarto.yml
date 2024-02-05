@@ -1,40 +1,25 @@
 project:
   type: website
-  output-dir: docs
-  
-website:
+  resources: 
+    - "*.mp4"
+
+website: 
   site-url: "https://raymz1990.github.io"
   #repo-url: "https://raymz1990.github.io"
   google-analytics: "G-NYKKWQWQLX"
   title: "Raymundo Eduardo Pilz"
   favicon: "static/favicon.svg"
-  page-navigation: true
-  search: false
+  search: false  
+
   open-graph: 
-    site-name: raymundo's website
+    site-name: Raymundo's website
     description: "Raymundo Pilz's website about work, graphics and statistics"
-    image: "static/img/avatar.svg"
-  navbar:
-    pinned: true
-    logo: "static/logo.svg"
-    title: false
-    background: primary
-    left:
-      - href: content/experience/index.qmd
-        text: Experience 
-      - href: content/education/index.qmd
-        text: Education 
-      - href: content/project/index.qmd
-        text: Projects
-    right:
-      - href: en/index.qmd
-        text: "{{< iconify emojione flag-for-united-states >}}"
-      - href: en/index.qmd
-        text: "{{< iconify emojione flag-for-spain >}}"
-  
+    locale: pt-BR
+
   page-footer:
     left: |
-      <b> © 2024 Raymundo Eduardo Pilz</b> | powered by [Quarto](https://quarto.org)
+      <b>© 2024 Raymundo Eduardo Pilz</b> | 
+      powered by [quarto](https://quarto.org)
     right: 
       - href: https://github.com/raymz1990
         text: "{{< iconify fa6-brands github >}}"
@@ -47,22 +32,7 @@ website:
 
   back-to-top-navigation: false
 
-format:
-  html:
-    theme: 
-      light: [flatly, assets/theme/theme-light.scss]
-      dark: [flatly, assets/theme/theme-dark.scss]
-    css: 
-      - assets/css/styles.css
-      - assets/css/academicons.css
-    code-copy: true
-    code-overflow: wrap
-    toc: true
-    highlight-style: zenburn
-    code-fold: true
-    code-link: true
-    link-external-icon: false
-    link-external-newwindow: true
-
-execute: 
-  freeze: auto
+profile:
+  default: english
+  group: [english, portuguese]
+  

@@ -1,0 +1,14 @@
+---
+title: "Cheat-sheet"
+listing:
+  id: projects
+  fields: [title, description]
+  #contents: 
+  type: grid
+  grid-columns: 3
+  categories: true
+  image-align: left
+  sort: "date desc"
+---
+
+Just some reggex and a lot of ggplot

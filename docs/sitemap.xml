@@ -1,55 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://raymz1990.github.io/content/education/index.html</loc>
-    <lastmod>2024-01-22T16:24:40.148Z</lastmod>
-  </url>
-  <url>
     <loc>https://raymz1990.github.io/index.html</loc>
-    <lastmod>2024-01-23T02:30:34.220Z</lastmod>
+    <lastmod>2024-02-05T02:21:16.302Z</lastmod>
   </url>
   <url>
-    <loc>https://raymz1990.github.io/en/content/cv/index.html</loc>
-    <lastmod>2024-01-23T02:28:10.296Z</lastmod>
+    <loc>https://raymz1990.github.io/content/experience/index.html</loc>
+    <lastmod>2024-02-05T02:07:24.200Z</lastmod>
   </url>
   <url>
-    <loc>https://raymz1990.github.io/en/content/education/index.html</loc>
-    <lastmod>2024-01-23T02:28:12.661Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raymz1990.github.io/en/content/experience/index.html</loc>
-    <lastmod>2024-01-23T02:28:14.656Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raymz1990.github.io/en/content/project/churn/index.html</loc>
-    <lastmod>2024-01-23T02:28:17.963Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raymz1990.github.io/en/content/project/curriculo-bi/index.html</loc>
-    <lastmod>2024-01-23T02:28:19.367Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raymz1990.github.io/en/content/project/german-credit/index.html</loc>
-    <lastmod>2024-01-23T02:28:20.612Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raymz1990.github.io/en/content/project/imdb-watchlist/index.html</loc>
-    <lastmod>2024-01-23T02:28:49.426Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raymz1990.github.io/en/content/project/index.html</loc>
-    <lastmod>2024-01-23T02:28:52.437Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raymz1990.github.io/en/content/project/population-pyramid/index.html</loc>
-    <lastmod>2024-01-23T02:28:58.568Z</lastmod>
-  </url>
-  <url>
-    <loc>https://raymz1990.github.io/en/index.html</loc>
-    <lastmod>2024-01-23T02:29:03.424Z</lastmod>
+    <loc>https://raymz1990.github.io/content/cheat-sheet/index.html</loc>
+    <lastmod>2024-02-05T00:23:36.201Z</lastmod>
   </url>
   <url>
     <loc>https://raymz1990.github.io/content/project/index.html</loc>
-    <lastmod>2024-01-23T02:33:33.197Z</lastmod>
+    <lastmod>2024-02-05T01:50:19.964Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raymz1990.github.io/content/education/index.html</loc>
+    <lastmod>2024-02-05T02:08:40.003Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raymz1990.github.io/content/resource/index.html</loc>
+    <lastmod>2024-02-05T02:16:02.496Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raymz1990.github.io/content/cv/index.html</loc>
+    <lastmod>2024-02-05T02:41:31.165Z</lastmod>
   </url>
 </urlset>

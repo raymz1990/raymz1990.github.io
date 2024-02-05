@@ -1,0 +1,54 @@
+project:
+  title: "Raymundo Eduardo Pilz"
+  output-dir: ./docs/
+
+website:
+  navbar:
+    pinned: true
+    logo: "static/logo.svg"
+    title: false
+    background: primary
+    right:
+      - text: English
+        menu:
+          - href: ../es
+            text: Spanish
+          - href: ../pt
+            text: Português
+#    right:
+#      - text: "{{< iconify emojione flag-for-brazil >}}"
+#        href: index.qmd
+#      - href: en/index.qmd
+#        text: "{{< iconify emojione flag-for-united-states >}}"
+#      - href: en/index.qmd
+#        text: "{{< iconify emojione flag-for-spain >}}"
+    left:
+      - href: index.qmd
+        text: Home
+      - href: content/experience/index.qmd
+        text: Experience
+      - href: content/education/index.qmd
+        text: Education
+      - href: content/project/index.qmd
+        text: Projects
+      - href: content/cheat-sheet/index.qmd
+        text: Cheat-Sheet
+      - href: content/resourse/resources.qmd
+        text: Resources
+    # right:
+      # - text: Português
+      #   href: |
+      #     <button onclick="window.location = location.href.replace('.io/','.io/pt/');" class="btn"><i class="fa fa-language"></button>
+      # - | 
+        # <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css><button onclick="window.location = location.href.replace('.io/','.io/pt/');" class="btn"><i class="fa fa-language"></i> Português</button>
+      
+lang: en
+
+format:
+  html:
+    theme: 
+     light: [flatly, assets/theme/theme-light.scss]
+     dark: [flatly, assets/theme/theme-dark.scss]
+    css: 
+      - assets/css/styles.css
+    toc: true

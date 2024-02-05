@@ -1,0 +1,52 @@
+project:
+  title: "Raymundo Eduardo Pilz"
+  output-dir: ./docs/pt
+
+website:
+  navbar:
+    pinned: true
+    logo: "static/logo.svg"
+    title: false
+    background: primary
+    right:
+      - text: Português
+        menu:
+          - href: ../
+            text: English
+            - href: ../es
+            text: Spanish
+
+#    right:
+#      - text: "{{< iconify emojione flag-for-brazil >}}"
+#        href: index.qmd
+#      - href: en/index.qmd
+#        text: "{{< iconify emojione flag-for-united-states >}}"
+#      - href: en/index.qmd
+#        text: "{{< iconify emojione flag-for-spain >}}"
+    left:
+      - href: index.qmd
+        text: Início
+      - href: content/experience/index.qmd
+        text: Experiência
+      - href: content/education/index.qmd
+        text: Educação
+      - href: content/project/index.qmd
+        text: Projetos
+      - href: content/cheat-sheet/index.qmd
+        text: Cheat-Sheet
+      - href: content/resourse/resources.qmd
+        text: Material
+    # right:
+    #   - target: |
+    #     <button onclick="window.location = location.href.replace('.io/','.io/pt/');" class="btn"><i class="fa fa-language"></i> Português</button>
+
+lang: pt-BR
+
+format:
+  html:
+    theme: 
+     light: [flatly, styles.scss] 
+     dark: [darkly, styles.scss]
+    css: styles.css
+    toc: true
+    mainfont: Atkinson Hyperlegible

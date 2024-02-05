@@ -103,7 +103,7 @@ div.quarto-post .thumbnail img {
 
 /*ligh mode*/  
   .light-section {
-    background-color: #4e734d;
+    background-color: #CA2C35;
     padding: 20px 0px;
   }
    
@@ -115,12 +115,12 @@ div.quarto-post .thumbnail img {
   }
     
   .light-bg {
-    background-color: rgba(78, 115, 77, 0.25);
+    background-color: #F2F1E9;
   }
 
   .light-logo {
     border-radius: 10%;
-    background-color: #4e734d;
+    background-color: #CA2C35;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,7 +182,7 @@ div.quarto-post .thumbnail img {
     text-align: center;
     font-size: 1.3em;
     border-bottom-width: 3px;
-    /*border-color: #4e734d;*/
+    /*border-color: #CA2C35;*/
   }
 
   .custom-table tr:hover {
