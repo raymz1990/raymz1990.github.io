@@ -40,7 +40,8 @@ website:
     #   - target: |
     #     <button onclick="window.location = location.href.replace('.io/','.io/pt/');" class="btn"><i class="fa fa-language"></i> Português</button>
 
-lang: pt-BR
+lang: pt
+# lang: pt-BR
 
 format:
   html:

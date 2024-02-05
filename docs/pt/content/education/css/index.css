@@ -1,0 +1,192 @@
+h1 {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h5 {
+  font-size: 0.575em;
+  }
+
+body {
+font-family: 'Montserrat';
+}
+
+.profile-pic {
+  border-radius: 50%;
+  position: center;
+  text-align: center;
+}
+
+.home-intro{
+  margin-top: -30px;
+  text-align: justify;
+  font-family: 'Montserrat';
+  font-size: 1.3em;
+}
+
+.news-header{
+  font-size: 2em;
+  font-family: 'Montserrat';
+  margin-bottom: -30px;
+}
+  
+
+div.quarto-post .thumbnail {
+  flex-basis: 20%;
+}
+
+div.quarto-post .thumbnail img {
+  margin-top: .4em;
+  width: 100%;
+  object-fit: scale-down;
+}
+
+
+.all-link{
+  font-size: 1em;
+  text-align: right;
+}
+
+.all-link a{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.all-link a::after{
+  display: inline-block;
+  content: "→";
+  position: relative;
+  margin-left: 2px;
+}
+
+.about-link{
+  font-size: 1em;
+  float: right;
+}
+
+.about-link a{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.about-link a::after{
+  display: inline-block;
+  content: "→";
+  position: relative;
+  margin-left: 2px;
+}
+  
+  
+  .table {
+      --bs-table-hover-bg:   #ebe9e1;
+  }
+  
+  
+  
+  .highlight-color{
+   color: #AD0059;
+  }
+  
+  /* --- widget border --- */
+  iframe{
+  border:1px solid black;
+  border-radius: 25px
+  }
+  
+  .wrapper {
+      display: flex;
+    }
+
+/*ligh mode*/  
+  .light-section {
+    background-color: #CA2C35;
+    padding: 20px 0px;
+  }
+   
+  .light-header{
+    font-size: 2em;
+    font-family: 'Montserrat';
+    margin-bottom: -30px;
+    color: #fdfbf7;
+  }
+    
+  .light-bg {
+    background-color: #F2F1E9;
+  }
+
+  .light-logo {
+    border-radius: 10%;
+    background-color: #CA2C35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .light-logo img {
+    width: 100px; 
+    margin-top: 10px;
+  }
+
+/*dark mode*/  
+  .dark-section {
+    background-color: #383732;
+    padding: 20px 0px;
+  }
+      
+  .dark-header{
+    font-size: 2em;
+    font-family: 'Montserrat';
+    margin-bottom: -30px;
+  }
+   
+  .dark-bg {
+    background-color: rgba(56, 55, 50, 0.45);
+  }
+
+  .dark-logo {
+    border-radius: 10%;
+    background-color: #383732;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dark-logo img {
+    width: 100px; 
+    margin-top: 10px;
+  }
+
+/*education*/
+  .margin-right {
+    margin-left: 100px; 
+  }
+
+/*tabela*/
+  .custom-table table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .custom-table th, .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .custom-table th {
+    text-align: center;
+    font-size: 1.3em;
+    border-bottom-width: 3px;
+    /*border-color: #CA2C35;*/
+  }
+
+  .custom-table tr:hover {
+    background-color: #f5f5f5; 
+  }
+
+

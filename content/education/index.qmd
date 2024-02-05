@@ -7,6 +7,8 @@ css: css/index.css
 
 :::: light-mode
 
+:::: {.content-visible when-profile="english"}
+
 ::::{.columns}
 ::: {.light-section}
 ::: {.column .col-v-center width="15%"}
@@ -107,8 +109,117 @@ EXTRACURRICULAR ACTIVITIES
 
 :::
 
+:::
+
+::: {.column .col-v-center width="20%"}
+:::
+
+:::
+::::
+
+::::
+
+:::: {.content-visible when-profile="portuguese"}
+
+::::{.columns}
+::: {.light-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.light-header}
+EDUCAÇÃO
+:::
+:::
+:::
+::::
+
+:::: {.columns}
+
+::: {.light-bg}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.d-inline-flex style="align-items:baseline"}
+::: p-2
+::: {.light-logo}
+![](img/UFPR.png)
+:::
+:::
+
+::: h3
+Universidade Federal do Paraná (**[UFPR](https://ufpr.br/)**) <br>
+<h5> **Bacharel em Estatística e Ciência de Dados**  <br>
+Conclusão prevista para 2026 </h5>
+:::
+
+:::
+
+---
+
+::: {.d-inline-flex style="align-items:baseline"}
+::: p-2
+::: {.light-logo}
+![](img/uno2.png){width="80px"}
+:::
+:::
+
+::: h3
+Universidade do Oeste de Santa Catarina (**[UNOESC](https://www.unoesc.edu.br/)**)
+<h5> **Bacharel em Contabilidade**  <br>
+Concluído em 2012 </h5>
+:::
+
+:::
+
+:::
+:::
+::::
 
 
+::::{.columns}
+::: {.light-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.light-header}
+CURSOS COMPLEMENTARERS
+
+:::
+:::
+:::
+::::
+
+:::: {.columns}
+
+::: {.light-bg}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.custom-table}
+| Curso                                                               | Ano  | Horas      | Ministratada por                      |
+|---------------------------------------------------------------------|:----:|:----------:|---------------------------------------|
+| SQL para Análise de Dados                                           | 2023 | 11,5 Horas	| Udemy                                 | 
+| Formação Microsoft Power BI Profissional  	                        | 2022 | 19,5 Horas	| Udemy                                 | 
+| LGPD, Governança de Dados e Gestão de Metadados                     | 2022 | 78 Horas	  | Data Science Academy                  | 
+| Formação Engenheiro de Blockchain                                   | 2022 | 18 Horas	  | Udemy                                 | 
+| Master DAX – Power BI voltado ao Projeto                            | 2022 | 13 Horas	  | Udemy                                 | 
+| Microsoft Power BI para Data Science	                              | 2021 | 72 Horas	  | Data Science Academy                  | 
+| Administração de Contas a Pagar, Receber e Tesouraria	              | 2020 | 8 Horas    |	Meta Cursos e Treinamentos            | 
+| Treinamento de Interpretação dos Requisitos da NBR ISO 9001:2015    | 2019 | 24 Horas	  | Padronizze Consultoria e Treinamentos |
+| Retenções Tributárias na Fonte                                      | 2019 | 8 Horas	  | Meta Cursos e Treinamentos            |
+| Princípios Microeconômicos                                          | 2017 | 12 Horas	  | Coursera                              |
+| Fundamentos da Gestão de Custos                                     | 2012 | 12 Horas	  | FGV                                   |
+| Gestão Tributária                                                   | 2011 | 12 Horas	  | Unoesc                                |
+
+:::
 
 :::
 
@@ -119,9 +230,15 @@ EXTRACURRICULAR ACTIVITIES
 ::::
 
 ::::
+
+::::
+
+
 
 :::: dark-mode
 
+:::: {.content-visible when-profile="english"}
+
 ::::{.columns}
 ::: {.dark-section}
 ::: {.column .col-v-center width="15%"}
@@ -231,6 +348,123 @@ EXTRACURRICULAR ACTIVITIES
 :::
 
 :::
+::::
+
+::::
+
+:::: {.content-visible when-profile="portuguese"}
+
+::::{.columns}
+::: {.dark-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.dark-header}
+EDUCAÇÃO
+
+:::
+:::
+:::
+::::
+
+
+
+
+:::: {.columns}
+
+::: {.dark-bg}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.d-inline-flex style="align-items:baseline"}
+::: p-2
+::: {.dark-logo}
+![](img/UFPR.png)
+:::
+:::
+
+::: h3
+Universidade Federal do Paraná(**[UFPR](https://ufpr.br/)**) <br>
+<h5> **Bachelarel em Estatística e Ciência de Dados**  <br>
+Conclusão prevista para 2026 </h5>
+:::
+
+:::
+
+---
+
+::: {.d-inline-flex style="align-items:baseline"}
+::: p-2
+::: {.dark-logo}
+![](img/uno2.png){width="80px"}
+:::
+:::
+
+::: h3
+Universidade do Oeste de Santa Catarina (**[UNOESC](https://www.unoesc.edu.br/)**)
+<h5> **Bacharel em Contabilidade**  <br>
+Concluído em 2012 </h5>
+:::
+
+:::
+
+:::
+:::
+::::
+
+::::{.columns}
+::: {.dark-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.dark-header}
+CURSOS COMPLEMENTARES
+
+:::
+:::
+:::
+::::
+
+:::: {.columns}
+
+::: {.dark-bg}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.custom-table}
+| Curso                                                               | Ano  | Horas      | Ministratada por                      |
+|---------------------------------------------------------------------|:----:|:----------:|---------------------------------------|
+| SQL para Análise de Dados                                           | 2023 | 11,5 Horas	| Udemy                                 | 
+| Formação Microsoft Power BI Profissional  	                        | 2022 | 19,5 Horas	| Udemy                                 | 
+| LGPD, Governança de Dados e Gestão de Metadados                     | 2022 | 78 Horas	  | Data Science Academy                  | 
+| Formação Engenheiro de Blockchain                                   | 2022 | 18 Horas	  | Udemy                                 | 
+| Master DAX – Power BI voltado ao Projeto                            | 2022 | 13 Horas	  | Udemy                                 | 
+| Microsoft Power BI para Data Science	                              | 2021 | 72 Horas	  | Data Science Academy                  | 
+| Administração de Contas a Pagar, Receber e Tesouraria	              | 2020 | 8 Horas    |	Meta Cursos e Treinamentos            | 
+| Treinamento de Interpretação dos Requisitos da NBR ISO 9001:2015    | 2019 | 24 Horas	  | Padronizze Consultoria e Treinamentos |
+| Retenções Tributárias na Fonte                                      | 2019 | 8 Horas	  | Meta Cursos e Treinamentos            |
+| Princípios Microeconômicos                                          | 2017 | 12 Horas	  | Coursera                              |
+| Fundamentos da Gestão de Custos                                     | 2012 | 12 Horas	  | FGV                                   |
+| Gestão Tributária                                                   | 2011 | 12 Horas	  | Unoesc                                |
+
+:::
+
+:::
+
+::: {.column .col-v-center width="20%"}
+:::
+
+:::
+::::
+
 ::::
 
 ::::

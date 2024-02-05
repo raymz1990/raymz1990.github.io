@@ -1,0 +1,16 @@
+[
+  {
+    "listing": "/content/project/index.html",
+    "items": [
+      "/content/project/churn/index.html",
+      "/content/project/german-credit/index.html",
+      "/content/project/imdb-watchlist/index.html",
+      "/content/project/population-pyramid/index.html",
+      "/content/project/curriculo-bi/index.html"
+    ]
+  },
+  {
+    "listing": "/content/cheat-sheet/index.html",
+    "items": []
+  }
+]

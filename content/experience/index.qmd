@@ -11,6 +11,8 @@ include-after-body:
 
 :::: light-mode
 
+:::: {.content-visible when-profile="english"}
+
 ::::{.columns}
 ::: {.light-section}
 ::: {.column .col-v-center width="15%"}
@@ -161,9 +163,168 @@ Administrative Assistant <br>
 ::::
 
 ::::
+
+:::: {.content-visible when-profile="portuguese"}
+
+::::{.columns}
+::: {.light-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.light-header}
+GS RISK
+:::
+:::
+:::
+::::
+
+:::: {.columns}
+::: {.light-bg}
+
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+## [GS Risk](https://www.linkedin.com/company/gsrisk/?originalSubdomain=br)
+
+Analista de Contabilidade <br>
+**Nov 2022 – presente** ● Curitiba, Paraná - Brasil 
+
+* Diagnóstico econômico-financeiro e identificação de fatores ponderantes, sob a ótica do risco de crédito;
+* Apuração, análise e acompanhamento de indicadores Operacionais, Rentabilidade, Liquidez, Endividamento e Estrutura Patrimonial, com gráficos e relatórios desenvolvidos no Power BI;
+* Análise e sugestão de melhorias referente estrutura das demonstrações contábeis conforme legislação contábil frente ao segmento de atuação da empresa;
+* Acompanhamento da performance e evolução dos contratos de financiamento à produção e cumprimento de premissas contratuais e utilização de limites, com gráficos e relatórios desenvolvidos em Power BI.
+
+:::
+:::
+::::
+
+::::{.columns}
+::: {.light-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.light-header}
+PRIDE
+:::
+:::
+:::
+::::
+
+:::: {.columns}
+::: {.light-bg}
+
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+## [Construtora e Incorporadora Pride S/A](https://www.construtorapride.com.br/)
+
+Analista de Controladoria <br>
+**Fev 2022 - Jul 2022** ● Curitiba, Paraná - Brasil 
+
+* Levantamento de dados econômicos e gerenciais para apuração e apresentação de resultados;
+* Desenvolvimento e análise de indicadores operacionais e financeiros;
+* Controle e apuração de variações entre orçado x realizado;
+* Apoio a área financeira com apuração da carteira de recebíveis e inadimplência, com relatório detalhado no Power BI;
+* Apoio a área contábil nas rotinas de fechamento;
+* Visualização e identificação de oportunidades e melhorias na gestão.
+
+:::
+:::
+::::
+
+::::{.columns}
+::: {.light-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.light-header}
+LUDOVICO TOZZO
+:::
+:::
+:::
+::::
+
+:::: {.columns}
+::: {.light-bg}
+
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+## [Ludovico J Tozzo LTDA](https://ludovico-tozzo.com.br/)
+
+Analista de Contabilidade <br>
+**Abr 2019 - Dez 2021** ● Chapecó, Santa Catarina - Brasil 
+
+* Lançamentos contábeis | Fechamento contábil | Auditoria;
+* Geração de livros fiscais de entradas e saídas | Retenção de impostos | Apuração de impostos;
+* Gestão de despesas | Relatórios de gastos | Alocação de custos | Controle de custos;
+* Rotinas financeiras de contas a pagar | Gestão de arquivos | Contratos;
+* Geração de balanços | Geração de balancetes | Gestão de documentos fiscais.
+
+:::
+:::
+::::
+
+::::{.columns}
+::: {.light-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.light-header}
+LAC LELO
+:::
+:::
+:::
+::::
+
+:::: {.columns}
+::: {.light-bg}
+
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+## [Laticínios São João S/A](http://www.laclelo.com.br/)
+
+Assistente Administrativo <br>
+**Dez 2012 – Abr 2019** ● São João do Oeste, Santa Catarina - Brasil 
+
+* Faturamento | Emissão de notas de saída | Lançamento de despesas;
+* Relatórios gerenciais | Indicadores de desempenho | Indicadores operacionais;
+* DRE | Formação de custos dos produtos | Controle de despesas de fretes;
+* Conferência de dados | Mapeamento dos processos;
+* Planejamento | Controle de estoque | Gestão de produtos;
+* Suporte ao cliente | Vendas.
+
+:::
+:::
+::::
+
+::::
+
+::::
+
+
 
 :::: dark-mode
 
+:::: {.content-visible when-profile="english"}
+
 ::::{.columns}
 ::: {.dark-section}
 ::: {.column .col-v-center width="15%"}
@@ -311,6 +472,162 @@ Administrative Assistant <br>
 
 :::
 :::
+::::
+
+::::
+
+:::: {.content-visible when-profile="portuguese"}
+
+::::{.columns}
+::: {.dark-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.dark-header}
+GS RISK
+:::
+:::
+:::
+::::
+
+:::: {.columns}
+::: {.dark-bg}
+
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+## [GS Risk](https://www.linkedin.com/company/gsrisk/?originalSubdomain=br)
+
+Analista de Contabilidade <br>
+**Nov 2022 – presente** ● Curitiba, Paraná - Brasil 
+
+* Diagnóstico econômico-financeiro e identificação de fatores ponderantes, sob a ótica do risco de crédito;
+* Apuração, análise e acompanhamento de indicadores Operacionais, Rentabilidade, Liquidez, Endividamento e Estrutura Patrimonial, com gráficos e relatórios desenvolvidos no Power BI;
+* Análise e sugestão de melhorias referente estrutura das demonstrações contábeis conforme legislação contábil frente ao segmento de atuação da empresa;
+* Acompanhamento da performance e evolução dos contratos de financiamento à produção e cumprimento de premissas contratuais e utilização de limites, com gráficos e relatórios desenvolvidos em Power BI.
+
+:::
+:::
+::::
+
+::::{.columns}
+::: {.dark-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.dark-header}
+PRIDE
+:::
+:::
+:::
+::::
+
+:::: {.columns}
+::: {.dark-bg}
+
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+## [Construtora e Incorporadora Pride S/A](https://www.construtorapride.com.br/)
+
+Analista de Controladoria <br>
+**Fev 2022 - Jul 2022** ● Curitiba, Paraná - Brasil 
+
+* Levantamento de dados econômicos e gerenciais para apuração e apresentação de resultados;
+* Desenvolvimento e análise de indicadores operacionais e financeiros;
+* Controle e apuração de variações entre orçado x realizado;
+* Apoio a área financeira com apuração da carteira de recebíveis e inadimplência, com relatório detalhado no Power BI;
+* Apoio a área contábil nas rotinas de fechamento;
+* Visualização e identificação de oportunidades e melhorias na gestão.
+
+
+:::
+:::
+::::
+
+::::{.columns}
+::: {.dark-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.dark-header}
+LUDOVICO TOZZO
+:::
+:::
+:::
+::::
+
+:::: {.columns}
+::: {.dark-bg}
+
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+## [Ludovico J Tozzo LTDA](https://ludovico-tozzo.com.br/)
+
+Analista de Contabilidade <br>
+**Abr 2019 - Dez 2021** ● Chapecó, Santa Catarina - Brasil 
+
+* Lançamentos contábeis | Fechamento contábil | Auditoria;
+* Geração de livros fiscais de entradas e saídas | Retenção de impostos | Apuração de impostos;
+* Gestão de despesas | Relatórios de gastos | Alocação de custos | Controle de custos;
+* Rotinas financeiras de contas a pagar | Gestão de arquivos | Contratos;
+* Geração de balanços | Geração de balancetes | Gestão de documentos fiscais.
+
+:::
+:::
+::::
+
+::::{.columns}
+::: {.dark-section}
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+::: {.dark-header}
+LAC LELO
+:::
+:::
+:::
+::::
+
+:::: {.columns}
+::: {.dark-bg}
+
+::: {.column .col-v-center width="15%"}
+:::
+
+::: {.column .col-v-center width="70%"}
+
+## [Laticínios São João S/A](http://www.laclelo.com.br/)
+
+Assistente Administrativo <br>
+**Dez 2012 – Abr 2019** ● São João do Oeste, Santa Catarina - Brasil 
+
+* Faturamento | Emissão de notas de saída | Lançamento de despesas;
+* Relatórios gerenciais | Indicadores de desempenho | Indicadores operacionais;
+* DRE | Formação de custos dos produtos | Controle de despesas de fretes;
+* Conferência de dados | Mapeamento dos processos;
+* Planejamento | Controle de estoque | Gestão de produtos;
+* Suporte ao cliente | Vendas.
+
+:::
+:::
+::::
+
 ::::
 
 ::::
